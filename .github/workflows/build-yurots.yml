@@ -36,8 +36,20 @@ jobs:
           mkdir -p package
           cp theotxserver config.lua package/
           cp -a data package/
+          sed -i -E 's/^[[:space:]]*sqlPass[[:space:]]*=.*/sqlPass = "CHANGE_ME_SET_YOUR_DB_PASSWORD"/' package/config.lua
           if [ -d mods ]; then cp -a mods package/; fi
           cp -a tutoriais\ +\ db/db_clean.sql package/database.sql
+          cat > package/start.sh <<'EOF'
+          #!/usr/bin/env bash
+          set -euo pipefail
+          cd "$(dirname "$0")"
+          if grep -q 'CHANGE_ME_SET_YOUR_DB_PASSWORD' config.lua; then
+            echo "Configure sqlPass in config.lua before starting." >&2
+            exit 1
+          fi
+          exec ./theotxserver
+          EOF
+          chmod +x package/start.sh
           cat > package/LEIA-ME.txt <<'EOF'
           CLASSICYUROTS - TIBIA 8.60
 
