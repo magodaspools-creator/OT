@@ -29,6 +29,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential liblua5.1-0-dev libboost-all-dev libgmp-dev libmariadb-dev libmariadb-dev-compat libxml2-dev libxml++2.6-dev libssl-dev zlib1g-dev libsqlite3-dev
 
+      - name: Verify Lua timer crash guard is present
+        run: |
+          grep -F 'Temporary validation interfaces must not schedule callbacks.' luascript.cpp
+          grep -F 'interface->m_interfaceName == "Test Interface"' luascript.cpp
+
       - name: Compile existing Yurots source
         run: make -j2
 
