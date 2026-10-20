@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Giant Guardian" nameDescription="a giant guardian" race="undead" experience="6500" speed="390" manacost="0">
+	<health now="38000" max="38000"/>
+	<look type="90" corpse="0"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="200" poison="350"/>
+		<attack name="lifedrain" interval="3000" chance="7" range="1" min="-200" max="-550"/>
+		<attack name="speed" interval="1000" chance="25" range="7" speedchange="-650" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="20" radius="3" target="0" min="-240" max="-400">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="physical" interval="3000" chance="10" radius="3" target="0" min="-390" max="-500">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="1000" chance="30" range="3" radius="2" target="1" min="-450" max="-1050">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="75" defense="75">
+		<defense name="healing" interval="1000" chance="13" min="1500" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="7" speedchange="1201" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="invisible" interval="2000" chance="13" duration="4000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="20"/>
+		<element physicalPercent="20"/>
+		<element firePercent="20"/>
+		<element energyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element holyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="3">
+		<summon name="Fire Elemental" interval="2000" chance="50" max="3"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Vengeance!"/>
+		<voice sentence="You will make a fine trophy."/>
+		<voice sentence="Come and fight me!"/>
+		<voice sentence="I am the supreme warrior!"/>
+	</voices>
+</monster>

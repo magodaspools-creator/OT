@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod name="Custom Monsters" version="1.0" author="The Forgotten Server" contact="otland.net" enabled="yes">
+	<!-- Training Monk -->
+	<monster name="Training Dummy" file="Custom/training dummy.xml"/>
+	<monster name="Training Dummy2" file="Custom/training dummy2.xml"/>
+	<monster name="Exercise Dummy" file="Custom/exercise dummy.xml"/>
+	
+	<!-- Yalahar CUSTOM -->
+	<monster name="Elite Gnarlhound" file="Yalahar/elite gnarlhound.xml"/>
+	<monster name="Elite Haunted Treeling" file="Yalahar/elite haunted treeling.xml"/>
+	<monster name="Elite Killer Caiman" file="Yalahar/elite killer caiman.xml"/>
+	<monster name="Elite Tiger" file="Yalahar/elite tiger.xml"/>
+	<monster name="The Welter" file="Yalahar/the welter.xml"/>
+	
+	<!-- Quest SET -->
+	<monster name="Infestation" file="questSet/infestation.xml"/>
+	<monster name="Beetle" file="questSet/beetle.xml"/>
+	<monster name="Immortal Ghost" file="questSet/immortal ghost.xml"/>
+	<monster name="Poison Scarab" file="questSet/poison scarab.xml"/>
+	<monster name="Poison Ancient Scarab" file="questSet/poison ancient scarab.xml"/>
+	
+	<!-- Classic Helmet -->
+	<monster name="Giant Guardian" file="ClassicHelmet/giant guardian.xml"/>
+	<monster name="Hotepsekhemui" file="ClassicHelmet/hotepsekhemui.xml"/>
+	<monster name="Sanakht" file="ClassicHelmet/sanakht.xml"/>
+	<monster name="Mentuhotep" file="ClassicHelmet/mentuhotep.xml"/>
+	<monster name="Tutankamon" file="ClassicHelmet/tutankamon.xml"/>
+	<monster name="Imhotep" file="ClassicHelmet/imhotep.xml"/>
+	<monster name="Elite Scarab" file="ClassicHelmet/elite scarab.xml"/>
+	
+	<!-- World Boss -->
+	<monster name="Ascending Ferumbras" file="WorldBoss/ascending ferumbras.xml"/>
+	<monster name="Corrupted Ascending Ferumbras" file="WorldBoss/corrupted ascending ferumbras.xml"/>
+	<monster name="Enthralled Demon" file="WorldBoss/enthralled demon.xml"/>
+	<monster name="Rift Invader" file="WorldBoss/rift invader.xml"/>
+	
+	<!-- War Castle -->
+	<monster name="empe" file="warcastle/empe.xml"/>
+	<monster name="pre1" file="warcastle/pre1.xml"/>
+	<monster name="pre2" file="warcastle/pre2.xml"/>
+	<monster name="antirush" file="warcastle/antirush.xml"/>
+	
+	<!-- Blood Castle -->
+	<monster name="Archangel" file="BloodCastle/archangel.xml"/>
+	<monster name="Bc Gate" file="BloodCastle/bc gate.xml"/>
+	<monster name="Chief Skeleton Archer" file="BloodCastle/chief skeleton archer.xml"/>
+	<monster name="Chief Skeleton Warrior" file="BloodCastle/chief skeleton warrior.xml"/>
+	<monster name="Dark Skull Soldier" file="BloodCastle/dark skull soldier.xml"/>
+	<monster name="Giant Ogre" file="BloodCastle/giant ogre.xml"/>
+	<monster name="Magic Skeleton" file="BloodCastle/magic skeleton.xml"/>
+	<monster name="Red Skeleton Knight" file="BloodCastle/red skeleton knight.xml"/>
+	<monster name="Red Skeleton Warrior" file="BloodCastle/red skeleton warrior.xml"/>
+	
+	<!-- Daily -->
+	<monster name="Daily Dark Torturer" file="Daily/daily dark torturer.xml"/>
+	<monster name="Daily Hellspawn" file="Daily/daily hellspawn.xml"/>
+	<monster name="Daily Destroyer" file="Daily/daily destroyer.xml"/>
+	<monster name="Daily Demon" file="Daily/daily demon.xml"/>
+	<monster name="Daily Nightmare" file="Daily/daily nightmare.xml"/>
+	<monster name="Daily Juggernaut" file="Daily/daily juggernaut.xml"/>
+	
+	<!-- Cave Exclusiva -->
+	<monster name="Cave Frost Dragon" file="Cave_exc/cave frost dragon.xml"/>
+	<monster name="Cave Hydra" file="Cave_exc/cave hydra.xml"/>
+	<monster name="Cave Grim Reaper" file="Cave_exc/cave grim reaper.xml"/>
+	<monster name="Cave Dragon Lord" file="Cave_exc/cave dragon lord.xml"/>
+	<monster name="Cave Demon" file="Cave_exc/cave demon.xml"/>
+	<monster name="Cave Sea Serpent" file="Cave_exc/cave sea serpent.xml"/>
+	<monster name="Cave Draken Abomination" file="Cave_exc/cave draken abomination.xml"/>
+	<monster name="Cave Nightmare" file="Cave_exc/cave nightmare.xml"/>
+	<monster name="Cave Ghastly Dragon" file="Cave_exc/cave ghastly dragon.xml"/>
+	<monster name="Cave Behemoth" file="Cave_exc/cave behemoth.xml"/>
+	<monster name="Cave Souleater" file="Cave_exc/cave souleater.xml"/>
+	<monster name="Cave Brimstone Bug" file="Cave_exc/cave brimstone bug.xml"/>
+	
+	<!-- Zombie Event -->
+	<monster name="Zombie Event" file="Custom/zombie event.xml"/>
+	
+	<!-- Demon Oak (evitar bug de SUMMON) -->
+	<monster name="Braindeath Oak" file="demonOak/braindeath_oak.xml"/>
+	<monster name="Demon Oak" file="demonOak/demon_oak.xml"/>
+	<monster name="Elder Beholder Oak" file="demonOak/elder bonelord_oak.xml"/>
+	<monster name="Giant Spider Oak" file="demonOak/giant spider_oak.xml"/>
+	<monster name="Lich Oak" file="demonOak/lich_oak.xml"/>
+	
+	<!-- Others -->
+	<monster name="Bug Edit" file="Custom/bug edit.xml"/>
+	<monster name="Mad Sheep" file="Custom/mad sheep.xml"/>
+	<monster name="Animated Skeleton" file="Custom/animated skeleton.xml"/>
+	<monster name="Quest Demon" file="Custom/quest demon.xml"/>
+	<monster name="Evolved Demon" file="Custom/evolved demon.xml"/>
+	<monster name="Vip Boss" file="Custom/vip boss.xml"/>
+	<monster name="Reward Chest" file="Custom/reward chest.xml"/>
+	<monster name="Renegade Warrior" file="Custom/renegade warrior.xml"/>
+	<monster name="GM BOSS" file="gm_boss.xml"/>
+	<!-- Edited's -->
+	<monster name="Weakened Devovorga" file="Edited/weakened devovorga.xml"/>
+	<monster name="Castle Weakened Devovorga" file="Edited/castle weakened devovorga.xml"/>
+	<monster name="Tentacles" file="Edited/tentacles.xml"/>
+	<monster name="Devovorga" file="Edited/devovorga.xml"/>
+	<monster name="Rise of Devovorga" file="Edited/rise of devovorga.xml"/>
+	<monster name="Fortified Devovorga" file="Edited/fortified devovorga.xml"/>
+	<monster name="Fortified Rise of Devovorga" file="Edited/fortified rise of devovorga.xml"/>
+	<monster name="Weakened Phantasm" file="Edited/weakened phantasm.xml"/>
+	<monster name="Furyosa" file="Edited/furyosa.xml"/>
+	<monster name="Extreme Furyosa" file="Edited/extreme furyosa.xml"/>
+	<monster name="Elite Mechanical Fighter" file="Edited/elite mechanical fighter.xml"/>
+	<monster name="Fortified Stone Lizard" file="Edited/fortified stone lizard.xml"/>
+	<monster name="Nervous Lizard" file="Edited/nervous lizard.xml"/>
+	<monster name="Elite Draken Abomination" file="Edited/elite draken abomination.xml"/>
+	<monster name="Elemental Draken" file="Edited/elemental draken.xml"/>
+	<monster name="Toxic Flower" file="Edited/toxic flower.xml"/>
+	<monster name="Elemental Lava" file="Edited/elemental lava.xml"/>
+	<monster name="Elementalist" file="Edited/elementalist.xml"/>
+	<monster name="Master Elemental" file="Edited/master elemental.xml"/>
+	
+	<!-- Promotion Quest -->
+	<monster name="Agathodemon" file="Promotion/agathodemon.xml"/>
+	<monster name="Agathodemon Cinematic" file="Promotion/agathodemon_cinematic.xml"/>
+	<monster name="Soul Catcher" file="Promotion/soul catcher.xml"/>
+	<monster name="Cage Guard" file="Promotion/cage guard.xml"/>
+	<monster name="Newgate Promotion" file="Promotion/newgate promotion.xml"/>
+	<monster name="Soul of Nirvana" file="Promotion/soul of nirvana.xml"/>
+	<monster name="Demonlord" file="Promotion/demonlord.xml"/>
+	
+	<!-- DTT -->
+	<monster name="red supreme tower" file="DTT/red supreme tower.xml"/>
+	<monster name="blue supreme tower" file="DTT/blue supreme tower.xml"/>
+	<monster name="red top tower" file="DTT/red top tower.xml"/>
+	<monster name="blue top tower" file="DTT/blue top tower.xml"/>
+	<monster name="blue middle tower" file="DTT/blue middle tower.xml"/>
+	<monster name="red middle tower" file="DTT/red middle tower.xml"/>
+	<monster name="blue bottom tower" file="DTT/blue bottom tower.xml"/>
+	<monster name="red bottom tower" file="DTT/red bottom tower.xml"/>
+	<monster name="serpent of jungle" file="DTT/serpent of jungle.xml"/>
+	<monster name="spider of jungle" file="DTT/spider of jungle.xml"/>
+</mod>

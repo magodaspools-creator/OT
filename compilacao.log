@@ -1,0 +1,507 @@
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/connection.o connection.cpp
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/luascript.o luascript.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from connection.cpp:20:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from luascript.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from luascript.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from luascript.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from connection.cpp:20:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from connection.cpp:20:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/party.o party.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from party.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from party.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from party.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/server.o server.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from server.cpp:20:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from server.cpp:20:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from server.cpp:20:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/waitlist.o waitlist.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from waitlist.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from waitlist.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from waitlist.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/container.o container.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from container.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/gui.o gui.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from gui.cpp:18:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from container.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from container.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from gui.cpp:18:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from gui.cpp:18:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/mailbox.o mailbox.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from mailbox.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/playerbox.o playerbox.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from playerbox.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from mailbox.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from mailbox.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from playerbox.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from playerbox.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/spawn.o spawn.cpp
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/weapons.o weapons.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from spawn.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from weapons.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from spawn.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from spawn.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from weapons.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from weapons.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/creature.o creature.cpp
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/house.o house.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from creature.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from house.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from creature.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from creature.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from house.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from house.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/manager.o manager.cpp
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/player.o player.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from manager.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from player.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from manager.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from manager.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from player.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from player.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/spectators.o spectators.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from spectators.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from spectators.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from spectators.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/creatureevent.o creatureevent.cpp
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/housetile.o housetile.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from creatureevent.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from housetile.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from creatureevent.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from creatureevent.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from housetile.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from housetile.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/map.o map.cpp
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/position.o position.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from map.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from position.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from map.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from map.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from position.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from position.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/spells.o spells.cpp
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from spells.cpp:17:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+g++ -c -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o obj/rsa.o rsa.cpp
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from spells.cpp:17:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from spells.cpp:17:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+In file included from /usr/include/boost/bind.hpp:30,
+                 from otpch.h:36,
+                 from rsa.cpp:20:
+/usr/include/boost/bind.hpp:36:1: note: ‘#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.’
+   36 | BOOST_PRAGMA_MESSAGE(
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from rsa.cpp:20:
+otsystem.h: In function ‘int64_t OTSYS_TIME()’:
+otsystem.h:125:14: warning: ‘int ftime(timeb*)’ is deprecated: Use gettimeofday or clock_gettime instead [-Wdeprecated-declarations]
+  125 |         ftime(&t);
+      |         ~~~~~^~~~
+In file included from otsystem.h:86,
+                 from luascript.h:20,
+                 from configmanager.h:20,
+                 from otpch.h:40,
+                 from rsa.cpp:20:
+/usr/include/x86_64-linux-gnu/sys/timeb.h:29:12: note: declared here
+   29 | extern int ftime (struct timeb *__timebuf)
+      |            ^~~~~
+g++ -march=native -mtune=native -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2" -DBOOST_DISABLE_ASSERTS -DNDEBUG -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations -o theotxserver obj/actions.o obj/cylinder.o obj/inputbox.o obj/monster.o obj/protocol.o obj/status.o obj/admin.o obj/database.o obj/databasemanager.o obj/ioban.o obj/monsters.o obj/protocolgame.o obj/talkaction.o obj/allocator.o obj/depot.o obj/ioguild.o obj/movement.o obj/protocolhttp.o obj/teleport.o obj/baseevents.o obj/dispatcher.o obj/iologindata.o obj/networkmessage.o obj/protocollogin.o obj/textlogger.o obj/beds.o obj/exception.o obj/iomap.o obj/npc.o obj/protocolold.o obj/thing.o obj/chat.o obj/fileloader.o obj/iomapserialize.o obj/otpch.o obj/quests.o obj/tile.o obj/combat.o obj/game.o obj/itemattributes.o obj/otserv.o obj/raids.o obj/tools.o obj/condition.o obj/gameservers.o obj/item.o obj/outfit.o obj/scheduler.o obj/trashholder.o obj/configmanager.o obj/globalevent.o obj/items.o obj/outputmessage.o obj/scriptmanager.o obj/vocation.o obj/connection.o obj/group.o obj/luascript.o obj/party.o obj/server.o obj/waitlist.o obj/container.o obj/gui.o obj/mailbox.o obj/playerbox.o obj/spawn.o obj/weapons.o obj/creature.o obj/house.o obj/manager.o obj/player.o obj/spectators.o obj/creatureevent.o obj/housetile.o obj/map.o obj/position.o obj/spells.o obj/rsa.o -llua5.1 -lgmp -lboost_thread -lboost_system -lmysqlclient -lxml2 -lboost_regex -lboost_filesystem -lcrypto

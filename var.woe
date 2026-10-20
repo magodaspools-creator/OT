@@ -1,0 +1,63 @@
+Castle, woe_config, stor = {}, {}, {}
+	
+--aid of entry.
+Castle.tiles = 45444
+
+--aid of flags in castle.
+Castle.banderas = 45445
+
+--aid of empes bases.
+Castle.bases = 45447
+
+--uids in case you have decorations with info.
+Castle.decoraciones = {}
+
+--where you teleported from temple.
+Castle.pos = {x = 3775, y = 2591, z = 7}
+
+--where players are teleported when finished or castle owner change.
+Castle._exit = {x = 3775, y = 2591, z = 7}
+
+--main empe pos => with this pos all castle pos will be calculated (default map only)
+Castle.empePos = {x = 3853, y = 2552, z = 7, stackpos = 253}
+
+Castle.guildEntry = {x = 3844, y = 2565, z = 8}
+	
+Castle.PreEmpes =
+	{
+		{x=3851, y=2572, z=7, stackpos=253},
+		{x=3856, y=2572, z=7, stackpos=253}
+	}
+
+--duration
+woe_config.timeToEnd = 45
+
+--bc type
+woe_config.bcType = MESSAGE_EVENT_ADVANCE
+
+--days
+woe_config.dias = {"tuesday", "thursday", "saturday"}
+
+--time to start
+woe_config.horaPartida = 21
+
+--access to start
+woe_config.accessToStar = 4
+
+--recall delay
+woe_config.recallTime = 10 * 60
+
+--rewards for winners
+woe_config.premios = false
+
+--storage for register players	
+stor.register = 8589
+
+--recall delay stor
+stor.recall = 23155
+
+--global stor started
+stor.Started = 7801
+
+--global stor [...]
+stor.WoeTime = 7802

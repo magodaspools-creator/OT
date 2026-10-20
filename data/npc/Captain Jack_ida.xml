@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Captain Jack" script="captain jack_ida.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="153" head="114" body="114" legs="114" feet="95" addons="3"/>
+<voices>
+<voice text="Pelos deuses! Você deve ser aquele intruso que os bons irmãos estavam falando! Vá embora!" interval2="3000" margin="1" yell="no"/>
+</voices>
+</npc>

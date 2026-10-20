@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Killer Caiman" nameDescription="a elite killer caiman" race="blood" experience="9000" speed="480" manacost="0">
+	<health now="15000" max="15000"/>
+	<look type="358" corpse="11430"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" skill="85" attack="160"/>
+	</attacks>
+	<defenses armor="90" defense="110">
+		<defense name="speed" interval="2000" chance="10" speedchange="520" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element icePercent="20"/>
+		<element earthPercent="20"/>
+		<element energyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2148" countmax="100" chance="21800" /><!-- gold coin -->
+		<item id="2148" countmax="80" chance="21800" /><!-- gold coin -->	
+		<item id="11196" countmax="2" chance="10300" /><!-- piece of crocodile leather -->
+		<item id="2149" countmax="5" chance="1375" /><!-- small emerald -->
+		<item id="2425" chance="6000" /><!-- obsidian lance -->
+		<item id="2671" chance="40100" /><!-- ham -->
+		<item id="11245" countmax="2" chance="4300" /><!-- bunch of ripe rice -->
+		<item id="7632" chance="1075" /><!-- giant shimmering pearl -->
+		<item id="3982" chance="700" /><!-- crocodile boots -->
+	</loot>
+</monster>

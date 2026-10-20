@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Magic Skeleton" nameDescription="a magic skeleton" race="undead" experience="9500" speed="220" manacost="300">
+	<health now="10000" max="10000"/>
+	<look type="153" body="94" feet="95" head="94" legs="95" addons="3" corpse="0"/>
+	<targetchange interval="4000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="80"/>
+		<flag targetdistance="3"/>
+		<flag runonhealth="500"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="80"/>
+		<attack name="physical" interval="5000" chance="35" range="7" min="-390" max="-880">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="45" range="7" radius="3" target="1" min="0" max="-680">
+			<attribute key="shootEffect" value="burstarrow"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="5" defense="5"/>
+	<elements>
+		<element physicalPercent="5"/>
+		<element energyPercent="20"/>
+		<element holyPercent="10"/>
+		<element earth="-10"/>
+		<element death="50"/>
+	</elements>
+</monster>

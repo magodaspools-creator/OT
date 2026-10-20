@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Evolved Demon" nameDescription="a evolved demon" race="undead" experience="20000" speed="500" manacost="0">
+	<health now="50000" max="50000"/>
+	<look type="12" head="0" body="94" legs="79" feet="79" corpse="12715"/>
+	<targetchange interval="4000" chance="35"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="98"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-300" max="-850"/>
+		<attack name="fire" interval="3000" chance="35" range="7" radius="7" target="1" min="-300" max="-750">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="melee" interval="1800" chance="40" range="7" radius="5" target="0" min="-150" max="-400">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="energy" interval="3000" chance="30" length="8" spread="0" min="-200" max="-700">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="physical" interval="2500" chance="20" range="7" radius="5" target="0" min="-100" max="-300">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="15" range="7" radius="13" target="0" min="-100" max="-300">
+			<attribute key="areaEffect" value="rednote"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="20" radius="14" target="0" min="-100" max="-300">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="melee" interval="3000" chance="15" range="7" radius="3" target="0" min="-100" max="-200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="85" defense="110">
+		<defense name="speed" interval="4000" chance="80" speedchange="540" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+		<elements>
+		<element physicalPercent="25"/>
+		<element deathPercent="25"/>
+		<element energyPercent="25"/>
+		<element earthpercent="25"/>
+		<element icePercent="-25"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity down="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="demon" interval="2000" chance="10" max="2"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="THERE IS NO WAY OUT! JUST DIE!"/>
+		<voice sentence="MUHAHAHAHA!"/>
+		<voice sentence="HOW DID YOU GET HERE? USELESS!!"/>
+	</voices>
+</monster>

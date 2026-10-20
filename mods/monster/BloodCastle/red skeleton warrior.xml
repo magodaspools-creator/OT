@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Red Skeleton Warrior" nameDescription="a red skeleton warrior" race="blood" experience="9500" speed="420" manacost="0">
+	<health now="18000" max="18000"/>
+	<look type="131" head="94" body="94" legs="94" feet="95" addons="3" corpse="0"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="90"/>
+		<attack name="physical" interval="3000" chance="25" range="7" radius="7" target="0" min="-300" max="-650">
+			<attribute key="areaEffect" value="rednote"/>
+		</attack>
+	</attacks>
+	<defenses armor="75" defense="75"/>
+	<elements>
+		<element earthPercent="100"/>
+		<element icePercent="100"/>
+		<element firePercent="95"/>
+		<element energyPercent="80"/>
+		<element physicalPercent="22"/>
+		<element deathPercent="20"/>
+		<element holyPercent="-16"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+</monster>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Negociante de Crystal" script="negociante de crystal.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="160" head="95" body="116" legs="121" feet="115" addons="0"/>
+<voices>
+<voice text="O canal para o sucesso é a mineração." interval2="4000" margin="1" yell="no"/>
+</voices>
+</npc>

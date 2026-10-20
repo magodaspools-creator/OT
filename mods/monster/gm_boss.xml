@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<monster name="GM BOSS" namedescription="a gm boss" race="venom" experience="350" speed="340" manacost="250">
+	<health now="999999" max="999999"/>
+	<look type="45" corpse="5990"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="100" skill="999" attack="999"/>
+	</attacks>
+	<defenses armor="999" defense="999"/>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+        <voice sentence="TROLEII!"/>
+        <voice sentence="HAHAHAH BOBAO!"/>
+		<voice sentence="Bateu nostalgia neah!"/>
+    </voices>
+</monster>

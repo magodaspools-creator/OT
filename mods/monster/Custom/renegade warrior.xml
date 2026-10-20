@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Renegade Warrior" nameDescription="a renegade warrior" race="blood" experience="1900" speed="270" manacost="0">
+  <health now="4300" max="4300"/>
+  <look type="254" head="80" body="99" legs="118" feet="38" corpse="6080"/>
+  <targetchange interval="2000" chance="5"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="90"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1500" skill="80" attack="95" poison="200"/>
+    <attack name="speed" interval="2000" chance="18" target="1" range="7" radius="5" duration="5000" speedchange="-250">
+		<attribute key="areaEffect" value="yellownote"/>
+	</attack>
+    <attack name="death" interval="1000" chance="12" length="5" spread="0" min="-60" max="-290">
+		<attribute key="areaEffect" value="purplenote"/>
+	</attack>
+  </attacks>
+  <defenses armor="45" defense="35"/>
+  <immunities>
+    <immunity poison="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="2000" chance="50">
+    <voice sentence="Leave me alone!"/> 
+  </voices>
+  <loot>
+		<item id="2148" countmax="90" chance="99800" /><!-- gold coin -->
+		<item id="2666" countmax="6" chance="9140" /><!-- Meat -->	
+		<item id="2377" chance="4230" /><!-- Two Handed Sword-->
+		<item id="2147" chance="2690" /><!-- Small Ruby -->
+		<item id="5910" chance="1020" /><!-- Green Piece of Cloth -->		
+		<item id="2487" chance="390" /><!-- Crown Armor -->
+		<item id="2488" chance="450" /><!-- Crown Legs -->			
+		<item id="2491" chance="490" /><!-- Crown Helmet -->	
+	</loot>
+</monster>

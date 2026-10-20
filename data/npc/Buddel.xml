@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Buddel" script="buddel.lua" walkinterval="4000" floorchange="0">
+<health now="100" max="100"/>
+<look type="143" head="19" body="57" legs="22" feet="20" addons="0"/>
+<voices>
+<voice text="Oh geeze, where are we again? *HICKS*" interval2="120" margin="1" yell="no"/>
+<voice text="*HICKS*" interval2="100" margin="1" yell="no"/>
+<voice text=" LALALALA ... an' a bottle of RUM !!!" interval2="90" margin="1" yell="no"/>
+</voices>
+</npc>

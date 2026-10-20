@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<monster name="Bug" namedescription="a bug" race="venom" experience="350" speed="340" manacost="250">
+	<health now="1500" max="1500"/>
+	<look type="45" corpse="5990"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="60" attack="60"/>
+	</attacks>
+	<defenses armor="20" defense="30"/>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+        <voice sentence="TROLEII!"/>
+        <voice sentence="HAHAHAH BOBAO!"/>
+		<voice sentence="Bateu nostalgia neah!"/>
+    </voices>
+	<loot>
+		<item id="2148" countmax="50" chance="33333"/><!-- gold coin -->
+		<item id="2679" countmax="10" chance="3125"/><!-- cherry -->
+	</loot>
+</monster>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+	<!-- Eventos -->
+	<event type="login" name="bombermanLogin" event="script" value="eventos/killuaBomberman.lua"/>
+	<event type="throw" name="bombermanPush" event="script" value="eventos/killuaBomberman.lua"/>
+	
+	<event type="kill" name="Monster Hunter" event="script" value="eventos/monster_hunter.lua"/>
+	<event type="login" name="Monster Hunterl" event="script" value="eventos/monster_hunter.lua"/>
+	
+	<event type="death" name="dttDeath" event="script" value="eventos/DTT.lua"/> 
+	<event type="PrepareDeath" name="dttPrepare" event="script" value="eventos/DTT.lua"/>
+	<event type="statschange" name="dttStats" event="script" value="eventos/DTT.lua"/>
+	<event type="outfit" name="dttOutfit" event="script" value="eventos/DTT.lua"/>
+	<event type="login" name="dttLogin" event="script" value="eventos/DTT.lua"/>
+	<!-- <event type="kill" name="dttKill" event="script" value="eventos/DTT.lua"/> -->
+	<event type="combat" name="dttCombat" event="script" value="eventos/DTT.lua"/>
+	<event type="login" name="BattleLogin" event="script" value="eventos/csbattle.lua"/>
+	<event type="PrepareDeath" name="BattleDeath" event="script" value="eventos/csbattle.lua"/>
+	<event type="combat" name="BattleTeam" event="script" value="eventos/csbattle.lua"/>
+	<event type="death" name="deathchannel" event="script" value="deathchannel.lua"/>﻿
+	
+	<event type="kill" name="RewardChest" event="script" value="eventos/reward_chest.lua"/>
+	<event type="kill" name="BcGate" event="script" value="eventos/bc_gate.lua"/>
+	<event type="kill" name="BcArchangel" event="script" value="eventos/bc_archangel.lua"/>
+	<event type="login" name="bc_protect_login" event="script" value="eventos/bc_protectlogin.lua"/>
+	<event type="death" name="bc_protect_death" event="script" value="eventos/bc_protectlogin.lua"/>
+
+	<!-- Anti Entrosa -->
+	<event type="death" name="AntiEntrosa" event="script" value="antiEntrosa.lua"/>
+	<event type="death" name="Anti Entrosa Death" event="script" value="antiEntrosa_logout.lua"/>
+	<event type="login" name="Anti Entrosa Login" event="script" value="antiEntrosa.lua"/>
+	<event type="logout" name="Anti Entrosa Logout" event="script" value="antiEntrosa_logout.lua"/>
+	<event type="moveitem" name="AntiEntrosa MoveItem" event="script" value="antiEntrosa.lua"/>
+	
+	<!-- ARENA PVP -->
+	<event type="PrepareDeath" name="arena_pvp1" event="script" value="arenapvp1.lua"/>
+	<event type="PrepareDeath" name="arena_pvp2" event="script" value="arenapvp2.lua"/>
+	<event type="login" name="arenaPVP1" event="script" value="arenapvp1.lua"/>﻿
+	<event type="login" name="arenaPVP2" event="script" value="arenapvp2.lua"/>﻿
+	<event type="look" name="arenaLook" event="script" value="arena_look.lua"/>
+	
+	<!-- War Castle -->
+	<event type="death" name="empe_broken" event="script" value="eventos/empe_broken.lua"/>
+	<event type="death" name="pre_empes" event="script" value="eventos/pre_empes.lua"/>
+	<event type="statschange" name="empe_dmg" event="script" value="eventos/empe_dmg.lua"/>
+	<event type="login" name="WoeHunt_login" event="script" value="eventos/woe_hunt.lua"/>
+	<event type="death" name="WoeHunt_death" event="script" value="eventos/woe_hunt.lua"/>
+	
+	<!-- Others -->
+	<event type="look" name="cookingLook" event="script" value="cooking_look.lua"/>
+	<event type="kill" name="KillBela" event="script" value="others/kill_boss_bela.lua"/>
+	<event type="kill" name="BossFirewalker" event="script" value="others/kill_boss_firewalker.lua"/>
+	<event type="advance" name="RecompensaLevel" event="script" value="recompensa_level.lua"/>
+	<event type="advance" name="RecompensaMoney" event="script" value="recompensa_money.lua"/>
+	<event type="kill" name="NewgatePromotionKill" event="script" value="others/newgate_promotion.lua"/>
+	<event type="kill" name="BossPromotion" event="script" value="others/kill_boss_promotion.lua"/>
+	<event type="kill" name="BlessedQuest" event="script" value="others/kill_boss_blessedquest.lua"/>
+	<event type="kill" name="ClassicWeaponQuest" event="script" value="others/boss_fortified_devovorga.lua"/>
+	<event type="statschange" name="ElementalDraken" event="script" value="others/elemental_draken.lua"/>
+	<event type="kill" name="CWFinalBoss" event="script" value="others/finalboss_wq.lua"/>
+	<event type="kill" name="MasterElemental" event="script" value="others/master_elemental.lua"/>
+	<event type="kill" name="KillWote" event="script" value="others/kill_mutated_zalamon.lua"/>
+	<event type="kill" name="BossClassicHelmet1" event="script" value="others/kill_boss_classichelmet1.lua"/>
+	<event type="kill" name="BossClassicHelmet2" event="script" value="others/kill_boss_classichelmet2.lua"/>
+	<event type="kill" name="BossClassicHelmet3" event="script" value="others/kill_boss_classichelmet3.lua"/>
+	<event type="kill" name="BossClassicHelmet4" event="script" value="others/kill_boss_classichelmet4.lua"/>
+	<event type="kill" name="PoisonAncient" event="script" value="others/kill_poison_ancient_scarab.lua"/>
+	<event type="think" name="Imhotep" event="script" value="others/imhotep.lua"/>
+	<event type="kill" name="BossClassicHelmetFinal" event="script" value="others/kill_boss_classichelmetFinal.lua"/>
+	<event type="kill" name="BossAura" event="script" value="others/kill_boss_aura.lua"/>
+	<event type="statschange" name="AsceFerumbras" event="script" value="worldboss/ascending_ferumbras.lua"/>
+	<event type="kill" name="KillBossEnDemon" event="script" value="worldboss/kill_enthralled_demon.lua"/>
+	<event type="kill" name="KillFerum" event="script" value="worldboss/kill_ferum_final.lua"/>
+	<event type="kill" name="BossMercenary" event="script" value="others/kill_boss_mercenary.lua"/>
+	
+	<event type="statschange" name="Dodge" event="script" value="dodge.lua"/>
+	<event type="statschange" name="Critical" event="script" value="critical.lua"/>
+	
+	<!-- ARENA SVAR -->
+	<event type="death" name="PlayerArena" event="script" value="arenaSvar/player_arena.lua"/>
+	<event type="kill" name="ArenaKill" event="script" value="arenaSvar/arena_kill.lua"/>
+	
+	<!-- DEMON OAK -->
+	<event type="logout" name="DemonOakLogout" event="script" value="demonOak/demonOakonLogout.lua"/>
+	<event type="death" name="DemonOakDeath" event="script" value="demonOak/demonOakonDeath.lua"/>
+	<event type="attack" name="DemonOakAttack" event="script" value="demonOak/demonOakonAttack.lua"/>
+	
+	<!-- Auto Loot -->
+	<event type="login" name="Auto_Loot_Login" event="script" value="auto_loot.lua"/>
+	<event type="kill" name="Auto_Loot_Kill" event="script" value="auto_loot.lua"/>
+	
+	<!-- Player Login -->
+	<event type="login" name="FirstItems" event="script" value="firstitems.lua"/>
+	<event type="login" name="PlayerLogin" event="script" value="login.lua"/>
+	<event type="login" name="AntiMagebomb" event="script" value="anti_magebomb.lua"/>
+	
+	<event type="login" name="mapMark" event="script" value="mapmark.lua"/>
+	
+	<!-- Server Events -->
+	<event type="channeljoin" name="GuildEvents" event="script" value="guild.lua"/>
+	<event type="mailreceive" name="Mail" event="script" value="mail.lua"/>
+	<event type="reportbug" name="ReportBug" script="reportbug.lua"/>
+	<event type="advance" name="AdvanceSave" event="script" value="advancesave.lua"/>
+	<event type="think" name="Idle" event="script" value="idle.lua"/>
+	<event type="think" name="SkullCheck" event="script" value="skullcheck.lua"/>
+	<event type="combat" name="partyAndGuildProtection" event="script" value="partyAndGuildProtection.lua"/>
+	<event type="login" name="recordIp" event="script" value="recordIp.lua"/>
+	<event type="kill" name="SummonKill" event="script" value="obsidianknife.lua"/>
+	<event type="login" name="obs_login" event="script" value="obsidianknife.lua"/>
+	<event type="extendedopcode" name="ExtendedOpcode" event="script" value="extendedopcode.lua"/>
+	<event type="tradeaccept" name="PlayerTrade" event="script" value="playerTrade.lua"/>
+	
+	<event type="login" name="Cave_Exc_login" event="script" value="cave_exc.lua"/>
+	<event type="death" name="Cave_Exc_death" event="script" value="cave_exc.lua"/>
+	<event type="login" name="WorldBoss_login" event="script" value="worldboss.lua"/>
+	<event type="death" name="WorldBoss_death" event="script" value="worldboss.lua"/>
+	
+	<event type="kill" name="Task" event="script" value="task.lua"/>
+	<event type="kill" name="Inquisition" event="script" value="inquisition.lua"/>
+	
+	<event type="kill" name="Wote1" event="script" value="wote1.lua"/>
+	<event type="kill" name="Devovorga" event="script" value="devovorga.lua"/>
+	
+	<event type="death" name="Azerus" event="script" value="azerus.lua"/>
+	
+	<!-- Task Boss -->
+	<event type="kill" name="Pirates" event="script" value="task_boss/pirates.lua"/>
+	<event type="kill" name="Necropharus" event="script" value="task_boss/necropharus.lua"/>
+	<event type="kill" name="HornedFox" event="script" value="task_boss/the_horned_fox.lua"/>
+	<event type="kill" name="Bloodtusk" event="script" value="task_boss/the_bloodtusk.lua"/>
+	<event type="kill" name="Esmeralda" event="script" value="task_boss/esmeralda.lua"/>
+	<event type="kill" name="Hide" event="script" value="task_boss/hide.lua"/>
+	<event type="kill" name="Leviathan" event="script" value="task_boss/leviathan.lua"/>
+	<event type="kill" name="Shardhead" event="script" value="task_boss/shardhead.lua"/>
+	<event type="kill" name="Stonecracker" event="script" value="task_boss/stonecracker.lua"/>
+	<event type="kill" name="TheMany" event="script" value="task_boss/the_many.lua"/>
+	<event type="kill" name="TheNoxiousSpawn" event="script" value="task_boss/the_noxious_spawn.lua"/>
+	<event type="kill" name="TheOldWidow" event="script" value="task_boss/the_old_widow.lua"/>
+	<event type="kill" name="TheSnapper" event="script" value="task_boss/the_snapper.lua"/>
+	<event type="kill" name="Thul" event="script" value="task_boss/thul.lua"/>
+	<event type="kill" name="TiquandasRevenge" event="script" value="task_boss/tiquandas_revenge.lua"/>
+	<event type="kill" name="Demodras" event="script" value="task_boss/demodras.lua"/>
+	
+</creaturescripts>

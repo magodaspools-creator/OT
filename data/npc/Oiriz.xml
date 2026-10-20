@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Oiriz" script="oiriz.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="66" head="60" body="100" legs="82" feet="114" addons="1"/>
+	<voices>
+<voice text="Gemas e jóias preciosas para venda!" interval2="4000" margin="1" yell="no"/>
+</voices>
+</npc>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Classic Yurots" script="classicyurots.lua" walkinterval="0" floorchange="0">
+<health now="100" max="100"/>
+<look typeex="12652" corpse="3128" />
+<parameters>
+<parameter key="message_greet" value="|PLAYERNAME|, precisa de ajuda? {Blessing}, {heal} ou {poi} para mais informações."/>
+    <parameter key="message_walkaway" value="Vejo você em breve aventureiro!"/>
+	<parameter key="message_farewell" value="Se você precisar de ajuda, procure-me." />
+</parameters>
+</npc>

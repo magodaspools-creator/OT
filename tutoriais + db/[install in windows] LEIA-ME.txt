@@ -1,0 +1,21 @@
+[Passo 1] Baixar XAMPP versão 1.7.3 caso não hospede em linux.
+> Executar o instalador como administrador!
+> Após a instalação, não exclua ou adicione nada ainda, até concluir o passo 2.
+
+[Passo 2] Acesse pelo browser (localhost/xampp) e configure.
+> Basta procurar por 'Segurança' após escolher o idioma português(Brasil).
+
+
+[Passo 3] Só deletar tudo que estiver em Htdocs e colocar seu website.
+> Adicione também a database em phpmyadmin.
+
+
+[Passo 4] Adicionando as configurações no AJAX
+> Vá até a pasta account e procure por:
+
+ajax_accountname.php
+ajax_charactername.php
+ajax_email.php
+
+Modifique a seguinte linha:
+$conn = mysql_pconnect('localhost', 'root', 'senha') or die();

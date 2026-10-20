@@ -1,0 +1,452 @@
+----- 1/12/2016 11:41:43 - GOD Vovozona (192.168.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -2310 @ 2
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 170 109 109 180 180 180 109 109 030 109
+Last Packet: 170 000 000 000 000 012 000 071 079 068 032 086 111 118 111 122
+Player Position: [32096,32200,7]
+Player Name: GOD Vovozona (Timeria)
+Player Action: 049 055 055 046 051 053 046 050 055 046 052 051 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 170) (MainWindow = 23375496), reason:
+Communication.cpp 2798: exception occurred (Mode = 24) (Channel = 0), reason:
+Communication.cpp 2792: unknown talk mode (Mode = 24), reason:
+[bug0000649]
+Thu Dec 01 11:41:24 2016
+Debug Assertion 8.60 Communication.cpp 2792
+
+----- 28/2/2017 0:6:5 - Weslley Kiyo (127.0.0.1) -----
+
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -2310 @ 2
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 015 144 120 180 162 107 102 109 102 109
+Last Packet: 180 019 007 000 047 105 032 118 105 097 108 120 005 058 011 160
+Player Position: [32375,32191,7]
+Player Name: Weslley Kiyo (Timeria)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 15) (MainWindow = 19955544), reason:
+Control.cpp 1325: unknown packet type during game (Type = 15)
+Mon Feb 27 23:52:29 2017
+Debug Assertion 8.60 Control.cpp 1325
+
+----- 28/2/2017 0:16:32 - Weslley Kiyo (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -2310 @ 2
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 000 120 120 120 121 121 100 011 010 031
+Last Packet: 010 146 160 000 016 050 000 000 011 170 170 170 170 213 213 213
+Player Position: [32368,32196,7]
+Player Name: Weslley Kiyo (Timeria)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 0) (MainWindow = 21480248), reason:
+Control.cpp 1325: unknown packet type during game (Type = 0)
+Tue Feb 28 00:15:24 2017
+Debug Assertion 8.60 Control.cpp 1325
+
+----- 8/5/2017 19:17:15 - Weslley Kiyo (192.168.0.1) -----
+
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -2310 @ 2
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 106 180 030 104 109 101 109 101 109 104
+Last Packet: 180 019 011 000 047 109 032 098 111 103 032 102 114 111 103 106
+Player Position: [33188,32706,7]
+Player Name: Weslley Kiyo (Timeria)
+Player Action: 049 056 049 046 050 049 051 046 051 050 046 049 057 050 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 106) (MainWindow = 20348744), reason:
+Communication.cpp 1784: exception occurred (rx = 7) (ry = 6), reason:
+Communication.cpp 1592: exception occurred (Type = 97) (CreatureID = 1073784223), reason:
+Objects.cpp 604: exception occurred (Number = 412), reason:
+Container.h 226: index out of range (original i: 412, i: 411, min: 1, d: 367)
+Mon May 08 19:15:38 2017
+Debug Assertion 8.60 Container.h 226
+
+----- 10/3/2018 13:40:43 - Weslley Kiyo (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 170 160 112 160 114 162 162 170 170 162
+Last Packet: 162 000 000 114 000 000 160 133 002 133 002 064 066 015 000 208
+Player Position: [31978,32827,2]
+Player Name: Weslley Kiyo (Timeria)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 170) (MainWindow = 75399000), reason:
+Communication.cpp 2798: exception occurred (Mode = 0) (Channel = 0), reason:
+Communication.cpp 2792: unknown talk mode (Mode = 0), reason:
+[bug0000649]
+Sat Mar 10 13:40:09 2018
+Debug Assertion 8.60 Communication.cpp 2792
+
+----- 10/3/2018 13:41:46 - Weslley Kiyo (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 170 160 112 160 114 162 030 162 170 162
+Last Packet: 162 000 000 114 000 000 160 133 002 133 002 064 066 015 000 208
+Player Position: [31978,32827,2]
+Player Name: Weslley Kiyo (Timeria)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 170) (MainWindow = 74941280), reason:
+Communication.cpp 2798: exception occurred (Mode = 0) (Channel = 0), reason:
+Communication.cpp 2792: unknown talk mode (Mode = 0), reason:
+[bug0000649]
+Sat Mar 10 13:40:57 2018
+Debug Assertion 8.60 Communication.cpp 2792
+
+----- 15/3/2018 14:41:16 - Weslley Kiyo (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 109 162 103 109 104 109 180 162 102 109
+Last Packet: 109 151 126 107 125 010 001 152 126 107 125 010 102 013 255 101
+Player Position: [32408,32107,10]
+Player Name: Weslley Kiyo (Timeria)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 109) (MainWindow = 48725848), reason:
+Communication.cpp 2151: exception occurred, reason:
+Communication.cpp 2142: MoveCreature has been received for a coordinate where there is no bank as first object [bug0000484], reason:
+ sx: 8 sy: 6 sz: 2
+ Position: 1
+ zx: 9 zy: 6 zz: 2
+ dx: 1 dy: 0 dz: 0
+ abs_sx: 32407 abs_sy: 32107 abs_sz: 10
+ abs_zx: 32408 abs_zy: 32107 abs_zz: 10
+ Start Cylinder (1):  (103,0) (99,268477870)
+ Start Cylinder (2):  (103,0) (99,268477870)(-)(-)(-)(-)(-)(-)(-)(-)
+ Destination Cylinder (1):  (3133,0)
+ Destination Cylinder (2):  (3133,0)(-)(-)(-)(-)(-)(-)(-)(-)(-)
+ ID: 268477870 Name: Weslley Kiyo
+ RealX: 32408 RealY: 32107 RealZ: 10
+ DeltaX: 0 DeltaY: 0
+Thu Mar 15 14:39:08 2018
+Debug Assertion 8.60 Communication.cpp 2142
+
+----- 22/8/2018 17:52:49 - [ADM] KOLISAO (187.65.51.208) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 109 106 106 106 108 108 106 108 108 131
+Last Packet: 109 014 001 225 007 008 001 014 001 226 007 008 000 000 000 000
+Player Position: [277,2012,9]
+Player Name: [ADM] KOLISAO (Yurots)
+Player Action: 049 056 055 046 054 053 046 053 049 046 050 048 056 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Network.cpp 921: assertion failed (BufferSize = 0) (NextToWrite = 16394), reason:
+BufferSize>0
+Wed Aug 22 17:52:35 2018
+Debug Assertion 8.60 Network.cpp 921
+
+----- 22/8/2018 17:53:17 - [ADM] KOLISAO (187.65.51.208) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 109 107 109 109 108 109 109 106 105 106
+Last Packet: 109 031 001 216 007 008 001 031 001 215 007 008 000 000 000 000
+Player Position: [277,2011,9]
+Player Name: [ADM] KOLISAO (Yurots)
+Player Action: 049 056 055 046 054 053 046 053 049 046 050 048 056 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Network.cpp 921: assertion failed (BufferSize = 0) (NextToWrite = 16394), reason:
+BufferSize>0
+Wed Aug 22 17:53:06 2018
+Debug Assertion 8.60 Network.cpp 921
+
+----- 22/8/2018 17:53:43 - [ADM] KOLISAO (187.65.51.208) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 109 109 106 108 108 109 170 170 131 131
+Last Packet: 109 029 001 221 007 009 001 029 001 222 007 009 109 025 001 213
+Player Position: [277,2009,9]
+Player Name: [ADM] KOLISAO (Yurots)
+Player Action: 049 056 055 046 054 053 046 053 049 046 050 048 056 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Network.cpp 921: assertion failed (BufferSize = 0) (NextToWrite = 16394), reason:
+BufferSize>0
+Wed Aug 22 17:53:36 2018
+Debug Assertion 8.60 Network.cpp 921
+
+----- 22/8/2018 17:55:5 - [ADM] KOLISAO (187.65.51.208) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 143 143 143 143 131 140 131 140 109 106
+Last Packet: 109 031 001 219 007 008 001 031 001 220 007 008 140 093 043 000
+Player Position: [277,2009,9]
+Player Name: [ADM] KOLISAO (Yurots)
+Player Action: 049 056 055 046 054 053 046 053 049 046 050 048 056 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Network.cpp 921: assertion failed (BufferSize = 0) (NextToWrite = 16394), reason:
+BufferSize>0
+Wed Aug 22 17:54:58 2018
+Debug Assertion 8.60 Network.cpp 921
+
+----- 22/8/2018 18:20:7 - [ADM] KOLISAO (187.65.51.208) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 143 143 170 143 131 140 131 140 131 140
+Last Packet: 140 129 043 000 064 100 131 022 001 215 007 009 013 140 104 043
+Player Position: [279,2010,9]
+Player Name: [ADM] KOLISAO (Yurots)
+Player Action: 049 056 055 046 054 053 046 053 049 046 050 048 056 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Network.cpp 921: assertion failed (BufferSize = 0) (NextToWrite = 16394), reason:
+BufferSize>0
+Wed Aug 22 17:58:06 2018
+Debug Assertion 8.60 Network.cpp 921
+
+----- 22/8/2018 21:32:55 - [ADM] KOLISAO (187.65.51.208) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 170 106 170 160 133 131 131 131 131 131
+Last Packet: 106 026 001 155 007 009 001 097 000 000 000 000 000 197 036 000
+Player Position: [281,1944,9]
+Player Name: [ADM] KOLISAO (Yurots)
+Player Action: 049 056 055 046 054 053 046 053 049 046 050 048 056 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 170) (MainWindow = 40533848), reason:
+Communication.cpp 2798: exception occurred (Mode = 0) (Channel = 0), reason:
+Communication.cpp 2792: unknown talk mode (Mode = 0), reason:
+[bug0000649]
+Wed Aug 22 21:32:27 2018
+Debug Assertion 8.60 Communication.cpp 2792
+
+----- 9/9/2018 22:5:17 - Pz Test (187.65.51.208) -----
+
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 106 132 132 109 146 109 132 132 132 132
+Last Packet: 106 255 007 006 008 007 002 097 000 000 000 000 000 102 038 000
+Player Position: [2045,2054,7]
+Player Name: [ADM] KOLISAO (Yurots)
+Player Action: 049 056 055 046 054 053 046 053 049 046 050 048 056 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 106) (MainWindow = 41713496), reason:
+Communication.cpp 1784: exception occurred (rx = 10) (ry = 6), reason:
+Communication.cpp 1592: exception occurred (Type = 97) (CreatureID = 1073751654), reason:
+Objects.cpp 604: exception occurred (Number = 553), reason:
+Container.h 226: index out of range (original i: 553, i: 552, min: 1, d: 367)
+Sun Sep 09 22:02:36 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 23/9/2018 21:45:12 - [ADM] KOLISAO (187.65.51.208) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 106 180 030 131 132 132 132 132 132 131
+Last Packet: 180 019 008 000 047 109 032 103 114 111 097 109 106 252 007 006
+Player Position: [2045,2054,7]
+Player Name: [ADM] KOLISAO (Yurots)
+Player Action: 049 056 055 046 054 053 046 053 049 046 050 048 056 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 106) (MainWindow = 41123672), reason:
+Communication.cpp 1784: exception occurred (rx = 7) (ry = 6), reason:
+Communication.cpp 1592: exception occurred (Type = 97) (CreatureID = 1073753481), reason:
+Objects.cpp 604: exception occurred (Number = 413), reason:
+Container.h 226: index out of range (original i: 413, i: 412, min: 1, d: 367)
+Sun Sep 23 21:44:15 2018
+Debug Assertion 8.60 Container.h 226
+
+----- 1/10/2018 2:54:46 - Ms Test (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 030 132 030 030 132 030 132 111 030 030
+Last Packet: 030 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+Player Position: [700,156,8]
+Player Name: Ms Test (Yurots)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 2717F58 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+NWin32Exception.cpp 50: win32 exception occurred, reason:
+access violation (read attempt at FFFFFFE9)
+Mon Oct 01 02:54:13 2018
+Debug Assertion 8.60 NWin32Exception.cpp 50
+
+----- 14/10/2018 2:16:14 - Kolisao (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 030 131 132 132 132 132 131 132 132 132
+Last Packet: 030 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+Player Position: [2045,2050,7]
+Player Name: Kolisao (Yurots)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 2797F58 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+NWin32Exception.cpp 50: win32 exception occurred, reason:
+access violation (read attempt at FFFFFFE9)
+Sun Oct 14 02:16:01 2018
+Debug Assertion 8.60 NWin32Exception.cpp 50
+
+----- 4/11/2018 20:47:44 - ADM Kolisao (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 106 104 109 180 162 141 180 160 131 180
+Last Packet: 106 086 003 164 008 008 001 142 022 106 086 003 163 008 008 001
+Player Position: [854,2214,8]
+Player Name: ADM Kolisao (Yurots)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 106) (MainWindow = 42695864), reason:
+Communication.cpp 1784: exception occurred (rx = 8) (ry = 4), reason:
+Map.cpp 488: assertion failed (Position = 1), reason:
+Position<=Point.getObjectCount()
+Sun Nov 04 20:47:21 2018
+Debug Assertion 8.60 Map.cpp 488
+
+----- 4/11/2018 21:2:56 - ADM Kolisao (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 106 160 131 180 180 180 180 162 141 130
+Last Packet: 106 086 003 160 008 008 001 142 022 106 086 003 159 008 008 001
+Player Position: [856,2210,8]
+Player Name: ADM Kolisao (Yurots)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 106) (MainWindow = 41647960), reason:
+Communication.cpp 1784: exception occurred (rx = 6) (ry = 4), reason:
+Map.cpp 488: assertion failed (Position = 1), reason:
+Position<=Point.getObjectCount()
+Sun Nov 04 20:55:52 2018
+Debug Assertion 8.60 Map.cpp 488
+
+----- 13/11/2018 11:59:15 - ADM Kolisao (127.0.0.1) -----
+
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 150 132 132 132 132 132 132 132 131 109
+Last Packet: 150 001 000 000 000 227 011 001 022 000 022 000 078 097 111 032
+Player Position: [2045,2050,7]
+Player Name: ADM Kolisao (Yurots)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 150) (MainWindow = 40468312), reason:
+Communication.cpp 2619: exception occurred, reason:
+Network.cpp 504: exception occurred, reason:
+Utils.cpp 550: assertion failed (Position = 19) (Size-Length = -5586), reason:
+Position<=Size-Length
+Tue Nov 13 11:58:38 2018
+Debug Assertion 8.60 Utils.cpp 550
+
+----- 12/2/2019 19:36:25 - Admin (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 131 030 162 161 131 030 131 163 132 180
+Last Packet: 131 087 003 159 008 008 036 000 000 000 000 000 000 000 000 000
+Player Position: [855,2207,8]
+Player Name: Admin (ClassicYurots)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Network.cpp 921: assertion failed (BufferSize = 0) (NextToWrite = 16394), reason:
+BufferSize>0
+Tue Feb 12 19:36:13 2019
+Debug Assertion 8.60 Network.cpp 921
+
+----- 15/2/2019 17:40:26 - Admin (127.0.0.1) -----
+
+Graphic Engine: DirectX9 (2)
+Operating System: Windows Vista Family in BRA
+Processor: Intel Core i5 -4440 @ 3
+Video Card: NVIDIA GeForce GTX 750 TI
+Last Packet Types: 142 180 142 180 142 180 131 142 180 030
+Last Packet: 180 019 012 000 047 110 101 119 116 121 112 101 032 051 054 056
+Player Position: [279,2544,9]
+Player Name: Admin (ClassicYurots)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Player.cpp 465: exception occurred, reason:
+Control.cpp 1728: exception occurred (MessageType: 0 MaW: 2738238 MoW: 0), reason:
+Control.cpp 1723: exception occurred, reason:
+Control.cpp 386: exception occurred (Force?1:0 = 0), reason:
+MainWindow.cpp 138: exception occurred (Surface = 1), reason:
+GUI.cpp 1559: exception occurred (Surface = 1), reason:
+MapWindow.cpp 869: exception occurred (Surface = 1), reason:
+MapWindow.cpp 549: exception occurred (Obj = 0), reason:
+MapWindow.cpp 1146: exception occurred (posx = 192) (posy = 128), reason:
+MapWindow.cpp 973: exception occurred, reason:
+MapWindow.cpp 957: exception occurred (Creature->OutfitType = 368) (Creature->CreatureID = 268452347), reason:
+Objects.cpp 494: exception occurred (Number = 368) (Flag = 24), reason:
+Container.h 226: index out of range (original i: 368, i: 367, min: 1, d: 367)
+Fri Feb 15 17:30:59 2019
+Debug Assertion 8.60 Container.h 226
+

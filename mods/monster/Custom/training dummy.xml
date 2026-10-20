@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Training Dummy" nameDescription="a training dummy" race="undead" experience="1000" speed="0" manacost="0">
+	<health now="90000" max="90000"/>
+	<look typeex="5788"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="50" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+		<event name="Critical"/>
+	</script>
+	<attacks>
+		<attack name="melee" interval="1500" min="-1" max="-5"/>
+	</attacks>
+	<defenses armor="1" defense="1">
+		<defense name="healing" interval="4000" chance="100" min="24000" max="44000"/>
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="0"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2148" countmax="20" chance="100000"/><!-- gold coin -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2044" chance="6666"/><!-- lamp -->
+			</inside>
+		</item>
+	</loot>
+</monster>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests>
+	<!-- COOKING -->
+	<quest name="Cooking" startstorageid="19990" startstoragevalue="1">
+		<mission name="Becoming a Cooking" storageid="45470" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você agora é um cozinheiro! Você tem acesso a cozinha do Erique Jacquan." />
+		</mission>
+		<mission name="Points - Cooking" storageid="45471" startvalue="0" notify="false">
+			<missionstate id="0" description="Pontos: |STATE|" />
+		</mission>
+	</quest>
+	
+	<!-- ROSHAMUUL -->
+	<quest name="Lower Roshamuul Quest" startstorageid="19990" startstoragevalue="1">
+		<mission name="Pile Bones" storageid="45490" startvalue="1" endvalue="2">
+			<missionstate id="1" description="Você deve dar use nos Large Pile of Various Bones para juntar 50 pontos. Assim que tiver 50 pontos, volte ao npc Sandomo." />
+			<missionstate id="2" description="Você concluiu a missão Pile Bones em Lower Roshamuul." />
+		</mission>
+		<mission name="Points - Roshamuul" storageid="45491" startvalue="0" notify="false">
+			<missionstate id="0" description="Pontos: |STATE|" />
+		</mission>
+	</quest>
+	
+	<!-- PROMOTION QUEST -->
+	<quest name="Promotion Quest" startstorageid="19991" startstoragevalue="1">
+		<mission name="Cinematic Trailer" storageid="45278" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você encontrou o Agathodemon na entrada da Promotion Quest." />
+		</mission>
+		<mission name="Reward" storageid="45286" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Voce pegou a recompensa do baú na Promotion Quest." />
+		</mission>
+	</quest>
+	
+	<!-- Yalahari -->
+	<quest name="The Yalahari Quest" startstorageid="19992" startstoragevalue="1">
+		<mission name="The Shadow Nexus" storageid="45259" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You killed Azerus. You received Yalahari Outfit! You can enter the reward room, it is located in the main room of the Yalahari." />
+		</mission>
+	</quest>
+	
+	<!-- Inquisition -->
+	<quest name="The Inquisition" startstorageid="19993" startstoragevalue="1">
+		<mission name="The Shadow Nexus" storageid="39000" startvalue="1" endvalue="7">
+			<missionstate id="1" description="You killed Ushuriel. Move to the next room and kill Zugurosh." />
+			<missionstate id="2" description="You killed Zugurosh. Move to the next room and kill Madareth." />
+			<missionstate id="3" description="You killed Madareth. Move to the next room and kill the brothers: Golgordan and Latrivan." />
+			<missionstate id="4" description="You killed the brothers: Golgordan and Latrivan. Move to the next room and kill Annihilon." />
+			<missionstate id="5" description="You killed Annihilon. Move to the next room and kill Hellgorak." />
+			<missionstate id="6" description="You killed Hellgorak. Move to the final room and enter to the final teleport." />
+			<missionstate id="7" description="You have completed The Inquisition Quest! You received Demon Hunt Outfit! You can enter the reward room, it is located in the main room of the Inquisition." />
+		</mission>
+	</quest>
+	
+	<!-- POI -->
+	<quest name="The Pits of Inferno Quest" startstorageid="19994" startstoragevalue="1">
+		<mission name="Tronos" storageid="45220" startvalue="1" endvalue="7">
+			<missionstate id="1" description="Você já fez 1/7 tronos." />
+			<missionstate id="2" description="Você já fez 2/7 tronos." />
+			<missionstate id="3" description="Você já fez 3/7 tronos." />
+			<missionstate id="4" description="Você já fez 4/7 tronos." />
+			<missionstate id="5" description="Você já fez 5/7 tronos." />
+			<missionstate id="6" description="Você já fez 6/7 tronos." />
+			<missionstate id="7" description="Você já fez 7/7 tronos. Você já pode ir para a sala de recompensa." />
+		</mission>
+		<mission name="Recompensa" storageid="45235" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você terminou a Pits of Inferno." />
+		</mission>
+	</quest>
+	
+	<!-- Tibia Tales -->
+	<quest name="Tibia Tales" startstorageid="19997" startstoragevalue="1">
+		<mission name="Quest 100k" storageid="45109" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você completou a Quest dos 100k." />
+		</mission>
+		<mission name="Old Backpack Quest" storageid="45271" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você recebeu uma Dwarven Armor." />
+		</mission>
+		<mission name="Firewalker Boots Quest" storageid="45276" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você concluiu a quest da Firewalker Boots." />
+		</mission>
+		<mission name="Dwarven Legs Quest" storageid="45287" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você concluiu a quest da Dwarven Legs." />
+		</mission>
+		<mission name="Demon Oak Quest" storageid="45297" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você concluiu a Demon Oak." />
+		</mission>
+		<mission name="AURA Quest" storageid="25950" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você concluiu a quest da AURA. Você agora possui AURA!" />
+		</mission>
+		<mission name="Ring Quest" storageid="45374" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você concluiu a quest do Ring." />
+		</mission>
+		<mission name="Wrath of the Emperor Quest" storageid="45263" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você concluiu a Wrath of the Emperor Quest." />
+		</mission>
+		<mission name="Canivete Quest" storageid="45348" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você concluiu a Quest do canivete." />
+		</mission>
+		<mission name="Weapon Quest" storageid="45346" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você concluiu a Weapon Quest." />
+		</mission>
+		<mission name="Golden Helmet Quest" storageid="45353" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a quest e recebeu Golden Helmet." />
+		</mission>
+		<mission name="Shield Quest" storageid="45354" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a quest do shield." />
+		</mission>
+		<mission name="Blessed Shield Quest" storageid="45357" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a quest do Blessed Shield. Parabéns!" />
+		</mission>
+		<mission name="Classic Helmet Quest" storageid="45455" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a quest do Classic Helmet. Parabéns!" />
+		</mission>
+		<mission name="Classic Boots Quest" storageid="45456" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a quest do Classic Boots. Parabéns!" />
+		</mission>
+		<mission name="Classic Weapon Quest" storageid="45386" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Parabéns! Você finalizou a Classic Weapon Quest." />
+		</mission>
+	</quest>
+	
+	<!-- Barbarian + Anihi -->
+	<quest name="The Ultimate Challenges" startstorageid="19998" startstoragevalue="1">
+		<mission name="Barbarian Arena - Greenhorn Mode" storageid="48297" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have defeated all enemies in this mode." />
+		</mission>
+		<mission name="Barbarian Arena - Scrapper Mode" storageid="48298" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have defeated all enemies in this mode." />
+		</mission>
+		<mission name="Barbarian Arena - Warlord Mode" storageid="48299" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have defeated all enemies in this mode." />
+		</mission>
+		<mission name="The Annihilator" storageid="50000" startvalue="1" endvalue="2">
+			<missionstate id="1" description="You Starting Annihilator Quest." />
+			<missionstate id="2" description="You have defeated all enemies and finish annihilator." />
+		</mission>
+		<mission name="Demon Helmet" storageid="45267" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You finished a demon helmet quest." />
+		</mission>
+	</quest>
+
+	<!-- OUTFITS -->
+    <quest name="Outfit and Addon Quests" startstorageid="19999" startstoragevalue="1">	
+		<mission name="Citizen Addon: Backpack" storageid="20000" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Citizen Addon: Feather Hat" storageid="20001" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Hunter Addon: Hooded Cloak or Winged Tiara" storageid="20002" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Hunter Addon: Sniper Gloves" storageid="20003" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Knight Addon: Sword" storageid="20004" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Knight Addon: Helmet" storageid="20005" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Mage Addon: Belt or Wand" storageid="20006" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Mage Addon: Tiara or Hat" storageid="20007" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Barbarian Addon: Wig" storageid="20008" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Barbarian Addon: Axe" storageid="20009" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Druid Addon: Paws" storageid="20010" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Druid Addon: Animal Fur" storageid="20011" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Nobleman Addon: Topper or Hat" storageid="20012" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Nobleman Addon: Cape or Dress" storageid="20013" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Oriental Addon: Scimitar or Jewel Belt" storageid="20014" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Oriental Addon: Turban or Veil" storageid="20015" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Summoner Addon: Belt or Wand" storageid="20016" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Summoner Addon: Cape or Hat" storageid="20017" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Warrior Addon: Spike on shoulder" storageid="20018" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Warrior Addon: Sword" storageid="20019" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Wizard Addon: Skull Mask or Cobra Tiara" storageid="20020" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Wizard Addon: Skull Shoulder or Wings" storageid="20021" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Demon hunter Addon: Addon One" storageid="20022" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Demon hunter Addon: Addon Two" storageid="20023" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Wayfarer Addon: Cape" storageid="20024" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Wayfarer Addon: Kabuto Addon" storageid="20025" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Warmaster Addon: Outfit" storageid="20026" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Outfit." />
+		</mission>
+		<mission name="Warmaster Addon: Addon One" storageid="20027" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Warmaster Addon: Addon Two" storageid="20028" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Assassin Addon: Outfit" storageid="20029" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Outfit." />
+		</mission>
+		<mission name="Assassin Addon: Assassin Mask" storageid="20030" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Assassin Addon: Assassin Katana" storageid="20031" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Beggar Addon: Outfit" storageid="20032" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Outfit." />
+		</mission>
+		<mission name="Beggar Addon: Barb or Dress" storageid="20033" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Beggar Addon: Staff" storageid="20034" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Jester Addon: Outfit" storageid="20035" startvalue="1" endvalue="101" notify="false">
+			<missionstate id="1-100" description="You already used this item |STATE|/100."/>
+			<missionstate id="101" description="Você finalizou a Outfit." />
+		</mission>
+		<mission name="Jester Addon: Staff" storageid="20036" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Jester Addon: Hat" storageid="20037" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Shaman Addon: Staff Voodoo" storageid="20038" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Shaman Addon: Mask Voodoo" storageid="20039" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Norseman Addon: Lance" storageid="20040" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Norseman Addon: Mantle or ear protector" storageid="20041" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Pirate Addon: Broadsword" storageid="20042" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Pirate Addon: Pirate Hat" storageid="20043" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Nightmare Addon: Outfit" storageid="20044" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Outfit." />
+		</mission>
+		<mission name="Nightmare Addon: Addon One" storageid="20045" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Nightmare Addon: Addon Two" storageid="20046" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+		
+		<mission name="Brotherhood Addon: Outfit" storageid="20047" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Outfit." />
+		</mission>
+		<mission name="Brotherhood Addon: Addon One" storageid="20048" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a First Addon." />
+		</mission>
+		<mission name="Brotherhood Addon: Addon Two" storageid="20049" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Você finalizou a Second Addon." />
+		</mission>
+	</quest>
+
+	<!-- TASKS -->
+    <quest name="Killing in the Name of..." startstorageid="14503" startstoragevalue="1">
+		<mission name="Paw and Fur - Hunting Elite" storageid="14501" startvalue="0" endvalue="500">
+			<missionstate id="0" description="You joined the 'Paw and Fur - Hunting Elite'. Ask Grizzly Adams for some hunting tasks."/>
+			<missionstate id="1-500" description="You joined the 'Paw and Fur - Hunting Elite'. Ask Grizzly Adams for some hunting tasks. You already completed |STATE| of them."/>
+		</mission>
+		<mission name="Paw and Fur - Rank" storageid="14502" startvalue="0" endvalue="6">
+			<missionstate id="1" description="You have been promoted to the rank of a 'Huntsman' in the 'Paw and Fur - Hunting Elite'."/>
+			<missionstate id="2" description="You have been promoted to the rank of a 'Ranger' in the 'Paw and Fur - Hunting Elite'."/>
+			<missionstate id="3" description="You have been promoted to the rank of a 'Big Game Hunter' in the 'Paw and Fur - Hunting Elite'."/>
+			<missionstate id="4" description="You have been promoted to the rank of a 'Trophy Hunter' in the 'Paw and Fur - Hunting Elite'."/>
+			<missionstate id="5" description="You have been promoted to the rank of a 'Elite Hunter' in the 'Paw and Fur - Hunting Elite'. This is the highest rank you can get."/>
+		</mission>
+		<mission name="Paw and Fur: Elfs" storageid="14001" startvalue="0" endvalue="100" notify="false">
+			<missionstate id="0-99" description="You already hunted |STATE|/100 elfs. You are supposed to kill 100 in total."/>
+			<missionstate id="100" description="You killed 70 elfs. You can restart that task if you are still under Level 50."/>
+		</mission>
+		<mission name="Paw and Fur: Orcs" storageid="14002" startvalue="0" endvalue="150" notify="false">
+			<missionstate id="0-149" description="You already hunted |STATE|/150 orcs. You are supposed to kill 150 in total."/>
+			<missionstate id="150" description="You killed 150 orcs. You can restart that task if you are still under Level 50."/>
+		</mission>
+		<mission name="Paw and Fur: Rotworms" storageid="14003" startvalue="0" endvalue="300" notify="false">
+			<missionstate id="0-299" description="You already hunted |STATE|/300 rotworms. You are supposed to kill 300 in total."/>
+			<missionstate id="300" description="You killed 300 rotworms. You can restart that task if you are still under Level 50."/>
+		</mission>
+		<mission name="Paw and Fur: Cyclops" storageid="14004" startvalue="0" endvalue="300" notify="false">
+			<missionstate id="0-299" description="You already hunted |STATE|/300 cyclops. You are supposed to kill 300 in total."/>
+			<missionstate id="300" description="You killed 300 cyclops. You can restart that task if you are still under Level 50."/>
+		</mission>
+		<mission name="Paw and Fur: Crocodiles" storageid="14005" startvalue="0" endvalue="301" notify="false">
+			<missionstate id="0-299" description="You already hunted |STATE|/300 crocodiles. You are supposed to kill 300 in total."/>
+			<missionstate id="300" description="You killed 300 crocodiles. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="301" description="Kill the boss 'Snapper' in boss room and report to Grizzly Adams. You can restart that task if you are still under Level 50."/>
+		</mission>
+		<mission name="Paw and Fur: Tarantulas" storageid="14006" startvalue="0" endvalue="301" notify="false">
+			<missionstate id="0-299" description="You already hunted |STATE|/300 tarantulas."/>
+			<missionstate id="300" description="You killed 300 tarantulas. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="301" description="Kill the boss 'Hide' in boss room and report to Grizzly Adams. You can restart that task if you are still under Level 50."/>
+		</mission>
+		<mission name="Paw and Fur: Carniphilas" storageid="14007" startvalue="0" endvalue="150" notify="false">
+			<missionstate id="0-149" description="You already hunted |STATE|/150 carniphilas. You are supposed to kill 150 in total."/>
+			<missionstate id="150" description="You killed 150 carniphilas. You can restart that task if you are still under Level 50."/>
+		</mission>
+		<mission name="Paw and Fur: Stone Golems" storageid="14008" startvalue="0" endvalue="200" notify="false">
+			<missionstate id="0-199" description="You already hunted |STATE|/200 stone golems. You are supposed to kill 200 in total."/>
+			<missionstate id="200" description="You killed 200 stone golems. You can restart that task if you are still under Level 50."/>
+		</mission>
+		<mission name="Paw and Fur: Mammoths" storageid="14009" startvalue="0" endvalue="301" notify="false">
+			<missionstate id="0-299" description="You already hunted |STATE|/300 mammoths."/>
+			<missionstate id="300" description="You killed 300 mammoths. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="301" description="Kill the boss 'Blood Tusk' in boss room and report to Grizzly Adams. You can restart that task if you are still under Level 50."/>
+		</mission>
+		<mission name="Paw and Fur: Ice Golems" storageid="14010" startvalue="0" endvalue="301" notify="false">
+			<missionstate id="0-299" description="You already hunted |STATE|/300 ice golems."/>
+			<missionstate id="300" description="You killed 300 ice golems. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="301" description="Kill the boss 'Shardhead' in boss room and report to Grizzly Adams. You can restart that task if you are still under Level 90."/>
+		</mission>
+		<mission name="Paw and Fur: All Quaras Scout" storageid="14011" startvalue="0" endvalue="300" notify="false">
+			<missionstate id="0-299" description="You already hunted |STATE|/300 all quaras scout. You are supposed to kill 300 in total."/>
+			<missionstate id="300" description="You killed 300 all quaras scout. You can restart that task if you are still under Level 90."/>
+		</mission>
+		<mission name="Paw and Fur: All Quaras" storageid="14012" startvalue="0" endvalue="301" notify="false">
+			<missionstate id="0-299" description="You already hunted |STATE|/300 all quaras. You are supposed to kill 300 in total."/>
+			<missionstate id="300" description="You killed 300 all quaras. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="301" description="Kill the boss 'Thul' in boss room and report to Grizzly Adams. You can restart that task if you are still under Level 90."/>
+		</mission>
+		<mission name="Paw and Fur: Water Elementals" storageid="14013" startvalue="0" endvalue="70" notify="false">
+			<missionstate id="0-69" description="You already hunted |STATE|/70 water elementals and massive water elementals. You are supposed to kill 70 in total."/>
+			<missionstate id="70" description="You killed 70 water elementals and massive water elementals. You can restart that task if you are still under Level 90."/>
+		</mission>
+		<mission name="Paw and Fur: Earth Elementals" storageid="14014" startvalue="0" endvalue="70" notify="false">
+			<missionstate id="0-69" description="You already hunted |STATE|/70 earth elementals and massive earth elementals. You are supposed to kill 70 in total."/>
+			<missionstate id="70" description="You killed 70 earth elementals and massive earth elementals. You can restart that task if you are still under Level 90."/>
+		</mission>
+		<mission name="Paw and Fur: Elephants" storageid="14015" startvalue="0" endvalue="70" notify="false">
+			<missionstate id="0-69" description="You already hunted |STATE|/70 elephants. You are supposed to kill 70 in total."/>
+			<missionstate id="70" description="You killed 70 elephants. You can restart that task if you are still under Level 90."/>
+		</mission>
+		<mission name="Paw and Fur: Killer Caimans" storageid="14016" startvalue="0" endvalue="200" notify="false">
+			<missionstate id="0-199" description="You already hunted |STATE|/200 killer caimans. You are supposed to kill 200 in total."/>
+			<missionstate id="200" description="You killed 200 killer caimans. You can restart that task if you are still under Level 90."/>
+		</mission>
+		<mission name="Paw and Fur: Mutated Rats" storageid="14017" startvalue="0" endvalue="201" notify="false">
+			<missionstate id="0-199" description="You already hunted |STATE|/200 mutated rats. You are supposed to kill 200 in total."/>
+			<missionstate id="200" description="You killed 200 mutated rats. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="201" description="Kill the boss 'Esmeralda' in boss room and report to Grizzly Adams. You can restart that task if you are still under Level 90."/>
+		</mission>
+		<mission name="Paw and Fur: Giant Spiders" storageid="14018" startvalue="0" endvalue="501" notify="false">
+			<missionstate id="0-499" description="You already hunted |STATE|/500 giant spiders. You are supposed to kill 500 in total."/>
+			<missionstate id="500" description="You killed 500 giant spiders. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="501" description="Kill the boss 'The Old Widow' in boss room and report to Grizzly Adams. You can restart that task if you are still under Level 90."/>
+		</mission>
+		<mission name="Paw and Fur: Hydras" storageid="14019" startvalue="0" endvalue="2001" notify="false">
+			<missionstate id="0-1999" description="You already hunted |STATE|/2000 hydras. You are supposed to kill 2000 in total."/>
+			<missionstate id="2000" description="You killed 2000 hydras. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="2001" description="Kill the boss 'The Many' in boss room and report to Grizzly Adams. You can restart that task."/>
+		</mission>
+		<mission name="Paw and Fur: Sea Serpents" storageid="14020" startvalue="0" endvalue="2001" notify="false">
+			<missionstate id="0-1999" description="You already hunted |STATE|/2000 sea serpents. You are supposed to kill 2000 in total."/>
+			<missionstate id="2000" description="You killed 2000 sea serpents. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="2001" description="Kill the boss 'Leviathan' in boss room and report to Grizzly Adams. You can restart that task."/>
+		</mission>
+		<mission name="Paw and Fur: Behemoths" storageid="14021" startvalue="0" endvalue="2001" notify="false">
+			<missionstate id="0-1999" description="You already hunted |STATE|/2000 behemoths. You are supposed to kill 2000 in total."/>
+			<missionstate id="2000" description="You killed 2000 behemoths. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="2001" description="Kill the boss 'Stonecracker' in boss room and report to Grizzly Adams. You can restart that task."/>
+		</mission>
+		<mission name="Paw and Fur: Serpent Spawns" storageid="14022" startvalue="0" endvalue="1501" notify="false">
+			<missionstate id="0-1499" description="You already hunted |STATE|/1500 serpent spawns. You are supposed to kill 1500 in total."/>
+			<missionstate id="1500" description="You killed 1500 serpent spawns. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="1501" description="Kill the boss 'Noxious Spawn' in boss room and report to Grizzly Adams. You can restart that task."/>
+		</mission>
+		<mission name="Paw and Fur: Demons" storageid="14023" startvalue="0" endvalue="6666" notify="false">
+			<missionstate id="0-6665" description="You already hunted |STATE|/6666 demons. You are supposed to kill 6666 in total."/>
+			<missionstate id="6666" description="You killed 6666 demons. Report Grizzly Adams to receive a reward."/>
+		</mission>
+		<mission name="Paw and Fur: Pirates" storageid="14025" startvalue="0" endvalue="1001" notify="false">
+			<missionstate id="0-999" description="You already hunted |STATE|/1000 pirates. You are supposed to kill 1000 in total."/>
+			<missionstate id="1000" description="You killed 1000 pirates. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="1001" description="Kill the boss 'RANDOM PIRATE' in boss room and report to Grizzly Adams. You can restart that task."/>
+		</mission>
+		<mission name="Paw and Fur: Minotaurs" storageid="14026" startvalue="0" endvalue="4001" notify="false">
+			<missionstate id="0-3999" description="You already hunted |STATE|/4000 minotaurs. You are supposed to kill 4000 in total."/>
+			<missionstate id="4000" description="You killed 4000 minotaurs. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="4001" description="Kill the boss 'The Horned Fox' in boss room and report to Grizzly Adams. You can restart that task."/>
+		</mission>
+		<mission name="Paw and Fur: Necro and Priest" storageid="14027" startvalue="0" endvalue="2001" notify="false">
+			<missionstate id="0-1999" description="You already hunted |STATE|/2000 necromancers and priestess. You are supposed to kill 2000 in total."/>
+			<missionstate id="2000" description="You killed 2000 necromancers and priestess. Report Grizzly Adams to kill the boss."/>
+			<missionstate id="2001" description="Kill the boss 'Necropharus' in boss room and report to Grizzly Adams. You can restart that task."/>
+		</mission>
+	</quest>
+	
+</quests>

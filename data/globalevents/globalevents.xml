@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<!-- Eventos -->
+	<globalevent name="Bomberman" time="16:00" event="script" value="eventos/killuaBomberman.lua"/>
+	<globalevent name="Bomberman Close" time="17:00" event="script" value="eventos/killuaBomberman.lua"/>
+	
+	<globalevent name="Monster Hunter Event" interval="10800000" event="script" value="eventos/monster_hunter.lua"/>
+
+	<globalevent name="dtt" time="20:00" event="script" value="eventos/DTT.lua"/>
+	
+	<globalevent name="csbattle" interval="60000" event="script" value="eventos/csbattle.lua"/>
+	
+	<globalevent name="WorldBoss" interval="60000" event="script" value="invasoes/ascending ferumbras.lua"/>
+
+	<globalevent name="StartSBW" time="09:00" event="script" value="eventos/snowball.lua"/>
+	<globalevent name="StartSBW2" time="13:00" event="script" value="eventos/snowball.lua"/>
+	<globalevent name="AnimatedSBW" interval="2000" event="script" value="eventos/snowball_effect1.lua"/>
+	<globalevent name="AnimatedSBW2" interval="8500" event="script" value="eventos/snowball_effect2.lua"/>
+	
+	<globalevent name="BloodCastle" time="22:00" event="script" value="eventos/blood_castle.lua"/>
+	
+	<globalevent name="CacaTesouro" interval="14400000" event="script" value="eventos/reward_chest.lua"/>
+	
+	<globalevent name="WoE" interval="60000" event="script" value="eventos/woe.lua"/>
+	<globalevent name="start_woe" time="21:00" event="script" value="eventos/start_woe.lua"/>
+	
+	<!-- Server Events -->
+	<globalevent name="save" interval="1600000" event="script" value="save.lua"/>
+	<globalevent name="clean" interval="7200000" event="script" value="clean.lua"/>
+	<globalevent name="init" type="startup" event="script" value="init.lua"/>
+	<globalevent name="globalsave" type="globalsave" event="script" value="init.lua"/>
+	<globalevent name="record" type="record" event="script" value="record.lua"/>
+	
+	<!-- ULTIMATE QUEST - EFEITOS -->
+	<globalevent name="masmort" interval="2000" event="script" value="effect_mas_mort.lua"/>
+	<globalevent name="maspox" interval="2000" event="script" value="effect_mas_pox.lua"/>
+	<globalevent name="granico" interval="2000" event="script" value="effect_gran_ico.lua"/>
+	<globalevent name="grancon" interval="2000" event="script" value="effect_gran_con.lua"/>
+	
+	<!-- Quests and Invasoes -->
+	<globalevent name="BossVip" interval="7200000" event="script" value="invasoes/boss vip.lua"/>
+	<globalevent name="orc_old_backpack" interval="4200000" event="script" value="orc_old_backpack.lua"/>
+	<globalevent name="Invasao" interval="5400000" event="script" value="invasoes/all.lua"/>
+	
+	<!-- Others -->	
+	<globalevent name="effect_vip" interval="2000" event="script" value="tp_falante_vip.lua"/>
+	<globalevent name="effect_dragon" interval="10000" event="script" value="effect_dragon.lua"/>
+	<globalevent name="tp_falante_evo" interval="2000" event="script" value="tp_falante_evo.lua"/>
+	<globalevent name="tp_falante_daily" interval="2000" event="script" value="tp_falante_daily.lua"/>
+	<globalevent name="tp_falante_red" interval="2000" event="script" value="tp_falante_red.lua"/>
+	<globalevent name="tp_falante_darkred" interval="2000" event="script" value="tp_falante_darkred.lua"/>
+	<globalevent name="tp_falante_orange" interval="2000" event="script" value="tp_falante_orange.lua"/>
+	<globalevent name="tp_falante_pink" interval="2000" event="script" value="tp_falante_pink.lua"/>
+	<globalevent name="tp_falante_green" interval="2000" event="script" value="tp_falante_green.lua"/>
+	<globalevent name="tp_falante_yellow" interval="2000" event="script" value="tp_falante_yellow.lua"/>
+	<globalevent name="effect_pvparea" interval="2000" event="script" value="effect_pvparea.lua"/>
+	<globalevent name="quest_falante" interval="2000" event="script" value="quest_falante.lua"/>
+	<globalevent name="effect_aura" interval="2000" event="script" value="effect_aura.lua"/>
+	<globalevent name="effect_aura_mp" interval="2000" event="script" value="effect_aura_mp.lua"/>
+	<globalevent name="effect_aura_hp" interval="2000" event="script" value="effect_aura_hp.lua"/>
+	<globalevent name="rainentrance1" interval="3000" event="script" value="the_rain_entrance1.lua"/>
+	<globalevent name="rainentrance2" interval="4000" event="script" value="the_rain_entrance2.lua"/>
+	<globalevent name="rainentrance3" interval="5000" event="script" value="the_rain_entrance3.lua"/>
+	<globalevent name="sala_boss_questset" interval="10000" event="script" value="falas_boss_questset.lua"/>
+	
+	<globalevent name="shop" interval="2000" event="script" value="shop.lua"/>
+	<globalevent name="guildshop" interval="2000" event="script" value="guildshop.lua"/>
+	<!-- Examples -->
+	<!-- <globalevent name="timer_example" time="21:35:11" event="script" value="my_script.lua"/> -->
+</globalevents>

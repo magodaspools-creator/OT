@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Animated Skeleton" nameDescription="a animated skeleton" race="undead" experience="0" speed="220" manacost="300">
+	<health now="350" max="350"/>
+	<look type="33" corpse="3103"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="45" attack="36"/>
+		<attack name="lifedrain" interval="1000" chance="9" range="4" min="-40" max="-150"/>
+		<attack name="death" interval="1000" chance="50" range="6" radius="2" target="1" min="-60" max="-210">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="2" defense="5">
+		<defense name="healing" interval="4000" chance="50" min="30" max="150"/>
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defenses>
+	<elements>
+		<element deathPercent="100"/>
+		<element holyPercent="-25"/>
+	</elements>
+</monster>

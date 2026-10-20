@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chief Skeleton Archer" nameDescription="a chief skeleton archer" race="undead" experience="5850" speed="180" manacost="350">
+	<health now="16500" max="16500"/>
+	<look type="298" corpse="0"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="2"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="2000" chance="100" range="2" min="-250" max="-500">
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+	</attacks>
+	<defenses armor="85" defense="50"/>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+			<immunity death="1"/>
+	</immunities>
+</monster>

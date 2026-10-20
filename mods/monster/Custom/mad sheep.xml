@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mad Sheep" nameDescription="a mad sheep" race="blood" experience="0" speed="290" manacost="400">
+	<health now="22" max="22"/>
+	<look type="14" corpse="2905"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-1" max="-5"/>
+	</attacks>
+	<defenses armor="2" defense="4">
+	<defense name="healing" interval="1000" chance="50" min="1" max="4"/>
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defenses>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Maeh"/>
+		<voice sentence="Groar!"/>
+		<voice sentence="Fchhhh"/>
+		<voice sentence="Meow!"/>
+		<voice sentence="Woof!"/>
+	</voices>
+</monster>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Vip Boss" nameDescription="a vip boss" race="undead" experience="100000" speed="600" manacost="0">
+	<health now="250000" max="250000"/>
+	<look type="12" head="95" body="94" legs="95" feet="94" corpse="6068"/>
+	<targetchange interval="5000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="98"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" min="-750" max="-1400"/>
+		<attack name="fire" interval="3000" chance="35" range="7" radius="7" target="1" min="-850" max="-1400">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="melee" interval="1800" chance="40" range="7" radius="5" target="0" min="-300" max="-500">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="energy" interval="3000" chance="30" length="8" spread="0" min="-500" max="-1500">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="physical" interval="2500" chance="20" range="7" radius="5" target="0" min="-150" max="-600">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="15" range="7" radius="13" target="0" min="-300" max="-550">
+			<attribute key="areaEffect" value="rednote"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="20" radius="14" target="0" min="-200" max="-500">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="melee" interval="3000" chance="15" range="7" radius="3" target="0" min="-100" max="-250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="65">
+		<defense name="healing" interval="3000" chance="35" min="3000" max="8000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="20000" chance="80" speedchange="650" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="100"/>
+		<element earthPercent="100"/>
+		<element energyPercent="100"/>
+		<element deathPercent="60"/>
+		<element physicalPercent="40"/>
+		<element icePercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="30">
+		<voice sentence="I AM VIP BOSS, LORD OF THE WORLD..." yell="1"/>
+		<voice sentence="THE WORLD OF TERROR WILL RISE!" yell="1"/>
+		<voice sentence="DESTRUCTION IS MY NAME!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="2152" countmax="90" chance="50000"/><!-- gold coin -->
+		<item id="9971" countmax="35" chance="50000"/><!-- gold ingot -->
+		<item id="12686" countmax="2" chance="20000"/><!-- event coin -->
+		<item id="12700" countmax="3" chance="30000"/><!-- boss egg -->
+		<item id="12855" chance="10500"/><!-- underworld package -->
+		<item id="12804" chance="6500"/><!-- dodge -->
+		<item id="12805" chance="6500"/><!-- critical -->
+		<item id="6132" chance="2000"/><!-- pair of soft boots -->
+		<item id="2522" chance="1500"/><!-- great shield -->
+		<item id="12714" chance="5000"/><!-- holy icon (1 charge) -->
+		<item id="12849" chance="7000"/><!-- stamina refiller -->
+	</loot>
+</monster>

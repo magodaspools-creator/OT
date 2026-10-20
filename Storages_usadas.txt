@@ -1,0 +1,323 @@
+AUTOLOOT = NÂO USAR NENHUMA DESSAS STORAGES
+			{45000 - 45001 - 45002 - 45003 - 45004 - 45005 - 45006 - 45007 - 45008 - 45009 - 45010}
+
+AURA = NÃO USAR NENHUMA DESSAS STORAGES
+			{25950 - 25951, 25952, 25953, 25954, 25955}
+			
+EMOTESPELLS = NÃO USAR NENHUMA DESSAS STORAGES
+			{29999}
+			
+VIPCHECK = NÃO USAR NENHUMA DESSAS STORAGES
+			{29998}
+
+EVENTCOIN = NÃO USAR NENHUMA DESSAS STORAGES
+			{29997 - 29996}
+			
+ARENA SVAR = NÃO USAR NENHUMA DESSAS STORAGES
+			{42300 à 42390} - {46000 e 47000} - {48297 à 48352}
+			
+NPC SYSTEM = NÃO USAR NENHUMA DESSAS STORAGES
+			{45814, 45815} {35418}
+			
+DODGE SYSTEM = NÃO USAR NENHUMA DESSAS STORAGES
+			{45820}
+CRITICAL SYSTEM = NÃO USAR NENHUMA DESSAS STORAGES
+			{45821}
+			
+ESPECIAL FOOD SYSTEM = NÃO USAR NENHUMA DESSAS STORAGES
+			{45822}
+			
+DEATH CHANNEL = NÃO USAR NENHUMA DESSAS STORAGES
+			{45823}
+			
+Annihi = NÂO USAR NENHUMA DESSAS STORAGES
+			{42229}
+////////////////////////////////
+/////////////SYSTEM/////////////
+////////////////////////////////
+
+- (action) Pick{UseGroundItemId: 355} [ActionID] = 777 >> Transforma o ground em buraco com pick
+- (action) Shovel{UseSandItemId: 231} [ActionID] = 778 >> Transforma o sand em buraco com shovel
+- (action) DrawWell{UseSandItemId: 1369} [ActionID] = 779 >> Teleporta o player para baixo
+- (movements) Premium_Tile [ActionID] = 10000
+- (creaturescript) Letter [StorageValue] = 10001
+- (action) banana tree [ActionID] = 42001 >> Da uma banana a cada 60 minutos
+- (action) train chest [ActionID] = 42002 >> Da food a cada 30 minutos
+- (action) orange tree [ActionID] = 42020 >> Da uma laranja a cada 60 minutos
+- (action) mango tree [ActionID] = 42021 >> Da um mango a cada 60 minutos
+- (action) POT - RUNES ALAVANCA [ActionID] = 42003-42019
+- (npc) first wand and rod [StorageValue] = 10002
+- (action-STORAGE) mining [itemid] = 10003-10004
+- (STORAGE) Recompensa LEVEL = 10005~10006
+
+////////////////////////////////
+/////////////GLOBAL/////////////
+////////////storages////////////
+
+- Parchment_Room (parchment) = 30000
+- Cave_Exc = 30050~30061
+- Moon Backpack = 30070
+- Golden Helmet ANTI_BURLAR = 30071
+- Alavanca TEMPO Daily Quest = 30072
+- Caça aos Baús = 30073
+- World Boss Global STOR (Hp Percent ferumbras) = 30074
+- World Boss Global STOR (saber que foi iniciado) = 30075
+- Blood Castle CHECK DEBUG = 30076
+- Arena PVP = 30077-30078
+- Lever quest SET teleport 1 = 30079
+
+////////////////////////////////
+/////////////ADDONS/////////////
+////////////storages////////////
+
+- Citizen = 20000-20001
+- Hunter = 20002-20003
+- Knight = 20004-20005
+- Mage = 20006-20007
+- Barbarian = 20008-20009
+- Druid = 20010-20011
+- Nobleman = 20012-20013
+- Oriental = 20014-20015
+- Summoner = 20016-20017
+- Warrior = 20018-20019
+- Wizard = 20020-20021
+- Demon hunter = 20022-20023
+- Yalaharian = NO HAVE STORAGE
+- Wayfarer = 20024-20025
+- Warmaster = 20026-20027-20028
+- Assassin = 20029-20030-20031
+- Beggar = 20032-20033-20034
+- Jester = 20035-20036-20037
+- Shaman = 20038-20039
+- Norseman = 20040-20041
+- Pirate = 20042-20043
+- Nightmare = 20044-20045-20046
+- Brotherhood = 20047-20048-20049
+- Shield Nightmare = 20050
+- Shield Necromancer = 20051
+
+--- SITE ADDONS ---
+- Citizen = 20052
+- Hunter = 20053
+- Knight = 20054
+- Mage = 20055
+- Barbarian = 20056
+- Druid = 20057
+- Nobleman = 20058
+- Oriental = 20059
+- Summoner = 20060
+- Warrior = 20061
+- Wizard = 20062
+- Demon hunter = 20063
+- Wayfarer = 20064
+- Warmaster = 20065
+- Assassin = 20066
+- Beggar = 20067
+- Jester = 20068
+- Shaman = 20069
+- Norseman = 20070
+- Pirate = 20071
+- Nightmare = 20072
+- Brotherhood = 20073
+- Yalaharian = 20074
+
+////////////////////////////////
+///////////QUEST LOG////////////
+////////////storages////////////
+
+- The Annihilator = 50000
+- INQ = [BOSS = 39001 - 39006] - [MAIN ROOM = 39007 - 39011] - [PORTALS = 39012 - 39022] (STORAGE PRINCIPAL = 39000)
+- POI = 45220 - 45235
+
+////////////////////////////////
+//////////////MAIN//////////////
+/////////START IN 45101/////////
+
+(action) gm island cadeira = 45101
+(STORAGE) rope ~ shovel = 45102
+(storage-movements) dp isle inicio = 45103-45104
+(action-STORAGE) Espelho Espelho Meu = 45105-45106
+(movements) tomb entrance = 45107
+(action - STORAGE) QUEST 100k = 45108~45109~45110
+(STORAGE) Quest Frost Dragon = 45111
+(STORAGE) Crown Armor Quest = 45112
+(STORAGE) Medusa Shield Quest = 45113
+(movements) Vial of Blood POI = 45114
+(STORAGE) The Holy Table POI = 45115
+(movements) entrance-Exit MW POI = 45116-45117
+(action) stone pick + lever OIL POI = 45118-45119
+(movements) fireVOC POI = 45120~45163
+(action) fireVOC lever POI = 45164~45167
+(action) 15lever POI = 45168-45169
+(STORAGE) book_quest_POI_lever = 45170
+(action) lever 1 e 2 POI = 45171-45172
+(movements) piso escada POI = 45173
+(movements) atalho_secreto POI = 45174
+(action) lever 3 POI = 45175
+(movements) maze POI = 45176-45204
+(action) lever 4 POI = 45205
+(movements) piso msg POI = 45206
+(STORAGE) pirate backpack POI = 45207
+(action) lever 5, 6, 7 e 8 POI = 45208~45209~45210~45211
+(movements) ground teleport sala POI = 45212~45213
+(action) tapestry POI = 45214
+(movements-action) ground teleport sala2, espelho and exit POI = 45215~45216~45217~45218
+(action) book 2 POI = 45219
+(movements) trono POI = 45220~45221-45227
+(movements) energy wall premio POI = 45228-45234
+(STORAGE) POI recompensa = 45235-45240
+(movements) setar storage POI 0 contagem trono = 45241
+(movements) acesso rapido POI = 45242
+(STORAGE) Ghasty Dragon QUEST = 45243-45244
+(STORAGE) Protection Amulet QUEST = 45245
+(STORAGE) Steath Ring QUEST = 45246
+(STORAGE) Orshabaal ROOM QUEST = 45247
+(STORAGE) Mermaid Comb QUEST = 45248
+(STORAGE) Elane's Crossbow QUEST = 45249
+(STORAGE) ceiron's wolf tooth chain QUEST = 45250
+(action) inquisition final = 45251
+(STORAGE) inquisition porta recompensa = 45252
+(STORAGE) inquisition recompensa = 45253
+(action) lever inquisition boss = 45254~45257
+(STORAGE) simon beggar staff QUEST = 45258
+(STORAGE) Azerus BOSS REWARD QUEST = 45259~45260
+(action) lever WOTE QUEST = 45261
+(STORAGE) WOTE QUEST FINAL = 45262~45263~45264
+(action-STORAGE) Demon Helmet Quest = 45265~45266~45267~45268
+(movements) tile temple = 45269
+(movements) tile bomberman level = 45270
+(STORAGE) Dwarven Armor = 45271
+(action) Azura Destroyer e massive = 45272~45273
+(STORAGE) Nightmare Doll Quest = 45274
+(movements) Infernalist Entrance = 45275
+(STORAGE) Firewalker Boots Quest = 45276
+(movements) Promotion Quest TILE ACTION = 45277
+(STORAGE) Promotion Quest CINEMATIC = 45278
+(movements) Promotion Quest 1fase pulo = 45279
+(movements) Promotion Quest 2fase = 45280~45281~45282~45283
+(action) Promotion Quest 2fase pedra = 45284
+(STORAGE) Promotion Quest Boss (aviso tp) = 45285
+(STORAGE) Promotion Quest (PREMIO) = 45286
+(STORAGE) Dwarven Legs Quest = 45287
+(action) Demon Oak Bloking Tree = 45288
+(action) Demon Oak Squires = 45289
+(action) Demon Oak GraveStone = 45290
+(movements) Demon Oak REWARD (premio) = 45291 ~ 45294
+(STORAGE) Demon Oak FINALIZAÇÃO, ARVORE, PRÊMIO e MORTE = 45295 - 45296 - 45297 - 45298
+(STORAGE) Demon Oak CHECK and EXIT = 45299 - 45300 - 45301
+(STORAGE) NPC Aura Quest = 45302
+(action) Lever Sala 1 à 12 Cave Exc = 45303~45314
+(STORAGE) Cave Exc Quantidade monstro = 45315
+(STORAGE) Checar se player está na sala = 45316
+(movements) Cave Exc EXIT = 45317
+(movements) Cave Exc ENTER = 45318
+(STORAGE) Cave Exc Player STOR = 45319~45330
+(action) Cave Exc ENTER PORTA = 45331~45342
+(STORAGE) Cave Exc CHECK SUA SALA = 45343
+(movements) Tile Quest WEapon = 45344
+(movements) TP QUEST Weapon = 45345
+(STORAGE) Weapon QUEST STORAGE = 45346
+(action) TP Weapon Quest(alavanca) 45347
+(STORAGE) canivete QUEST STORAGE PREMIO = 45348
+(action) Moon Backpack or Blood herb or item minerio QUEST (2hrs) = 45349
+(movements) Canivete Entrada AVISO = 45350
+(action) Canivete Carrinho 1 e 2 = 45351~45352
+(STORAGE) Golden Helmet Quest = 45353-45354
+(movements) Golden Helmet AVISO = 45355
+(movements) Golden Helmet SCRIPT = 45356
+(STORAGE) Blessed Shield QUEST = 45357
+(STORAGE) DAILY QUEST STOR = 45358
+(movements) Daily Aviso = 45359
+(movements) Daily ENTRADA = 45360
+(action) Daily Alavanca = 45361
+(action) Daily Reward = 45362 (Storage não usada, guardada: 45363 - 45368)
+(movements) BossVIP entrada = 45369
+(STORAGE) Map Mark = 45370
+(movements) Check MC mineração = 45371
+(movements) 1 e 4 parte Ring Quest = 45372-45373
+(STORAGE) Quest RING = 45374
+(movements) aviso_basin classic weapon quest = 45375
+(movements) coal basin classic weapon quest + STOR = 45376 ~ 45377
+(movements) antimc daily = 45378
+(movements) level tile classic weapon quest = 45379
+(movements) tipo labirinto classic weapon quest = 45380~45383
+(movements) aviso final boss ROOM classic weapon quest = 45384
+(movements) fire final boss room classic weapon quest = 45385
+(STORAGE) Classic Weapon REWARD = 45386
+(STORAGE) SnowBall STOR = 45387 ~ 45390
+(STORAGE) SnowBall Action Gerador = 45391
+(movements) SnowBall Action TP = 45392
+(STORAGE) Mineracao SAVE STOR = 45393
+(movements) mining EXIT action = 45394
+(movements) snowball antimc = 45395
+(movements) snowball level = 45396
+(movements) blood castle level = 45397
+(action) blood castle lever ponte = 45398
+(STORAGE) Blood Castle STOR = 45399
+(STORAGE) Red Crystal PROMOTION = 45400
+(movements) Blood castle anti MC = 45401
+(STORAGE) Blood Castle CHECK REWARD = 45402
+(STORAGE) Blood Castle Protect Login = 45403 ~ 45404 ~ 45405
+(STORAGE) Legion Helmet Quest = 45406
+(STORAGE) Barbarian Axe Quest = 45407
+(STORAGE) Black Knight Quest = 45408
+(STORAGE) Blood Herb Quest = 45409
+(STORAGE) Braindeath Quest = 45410
+(STORAGE) Banshee Quest = 45411 ~ 45412
+(STORAGE) Crusader Helmet Quest = 45413
+(STORAGE) Deeper Fibula Quest = 45414~45415~45416~45417~45418
+(STORAGE) Elephant Tusk Quest = 45419
+(STORAGE) Formorgar Mine Quest(EDIT: Frost Dragon) = 45420
+(STORAGE) Heaven Blossom Quest = 45421
+(STORAGE) Death Ring Quest = 45422
+(STORAGE) Iron Ore Quest = 45423
+(STORAGE) Mad Mage Room Quest = 45424~45425~45426
+(STORAGE) Amazon Camp Quest = 45427
+(STORAGE) Black Pearl Quest = 45428
+(STORAGE) Necro Quest (Medusa Shield Quest) = 45429~45430
+(STORAGE) Minotaur Leather = 45431
+(STORAGE) Naginata Quest = 45432
+(STORAGE) Noble Armor Quest = 45433~45434
+(STORAGE) Orc Fortress Quest = 45435
+(STORAGE) Amazon Camp Quest 2 = 45436
+(STORAGE) Waterfall Quest(pirate) = 45437
+(movements) Waterfall Leave(pirate) = 45438
+(STORAGE) Priest Quest = 45439~45440
+(movements) Tp Event Room = 45441
+(movements - EVENTO) CS Battle = 45442
+(movements) CS Battle Level = 45443
+(movements) WarCastle - Entrance = 45444
+(movements-STORAGE) WarCastle - TP GuildDominanteATALHO = 45445-45446
+(NONE) AID POS Pres WarCastle = 45447
+(action) UID WarCastle ADD rush wood = 45448
+(movements) WarCastle HUNTS Entrance = 45449
+(movements) WarCastle Hunts STOR = 45450-45451
+(movements) Tile WarCastle = 45452
+(movements) Tile Trainer Free e VIP = 45453-45454
+(STORAGE) Classic Helmet+Boots = 45455-45456
+(movements) AntiMc + lvl world boss = 45457-45458-45459
+(STORAGE) Stamina Refiller = 45460
+(STORAGE) World Boss Ferumbras FINAL = 1º-45461 ~ 2º-45462 (storage não usada, guardada: 3º-45463)
+(STORAGE) World Boss NPC FINAL = 45464
+(action) Chaves MEME = 45465
+(action) Arena 1 e 2 = 45466-45467
+(STORAGE) Arena Duelo LOOK = 45468(exaust) ~ 45469(check duelo qtd wins)
+(STORAGE) Sendo Cozinheiro = 45470
+(STORAGE) PONTOS Cozinheiro = 45471
+(action) Alavancas UnderWorld = 45472-45485
+(STORAGE) Pacote de Fundador = 45486
+(STORAGE) guild outfit exhaust = 45487
+(movements) check level roshamuul = 45488
+(movements) exit roshamuul = 45489
+(STORAGE) mission acesso roshamuul = 45490 ~ (45491 = pontos)
+(action) mission acesso roshamuul, bones = 45492
+(movements) tp trainers particulares = 45493
+(STORAGE) Exhaust vip rings = 45494
+(action) lever set quest teleport 1 = 45495
+(movements) basin set quest teleport = 45496
+(movements) teleport tp 2 quest set = 45497
+(action) lever set quest tp 2 = 45498~45500
+(STORAGE) Reward Set Quest = 45501
+(STORAGE) Task 6666 demons para Demon Oak = 45502
+(STORAGE) Cast 5% XP Check = 45503~45504
+(action) Falcons Yalahar Acess = 45505~45506~45507~45508~45509
