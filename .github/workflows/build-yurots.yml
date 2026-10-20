@@ -1,0 +1,60 @@
+name: Build Yurots 8.60
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "*.cpp"
+      - "*.h"
+      - "Makefile"
+      - "config.lua"
+      - "data/**"
+      - "mods/**"
+      - ".github/workflows/build-yurots.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential liblua5.1-0-dev libboost-all-dev libgmp-dev libmariadb-dev libxml2-dev libxml++2.6-dev libssl-dev zlib1g-dev libsqlite3-dev
+
+      - name: Compile existing Yurots source
+        run: make -j2
+
+      - name: Assemble runtime package
+        run: |
+          mkdir -p package
+          cp theotxserver config.lua package/
+          cp -a data package/
+          if [ -d mods ]; then cp -a mods package/; fi
+          cp -a tutoriais\ +\ db/db_clean.sql package/database.sql
+          cat > package/LEIA-ME.txt <<'EOF'
+          CLASSICYUROTS - TIBIA 8.60
+
+          Este pacote contém o binário compilado, datapack e mapa Yurots.
+          O banco MySQL precisa ser criado/importado separadamente usando database.sql.
+          Antes de iniciar, edite config.lua e preencha sqlHost, sqlUser, sqlPass e sqlDatabase.
+          Para jogar na mesma rede, use o IP LAN do computador servidor no cliente.
+          Para amigos pela internet, configure encaminhamento TCP das portas configuradas em config.lua
+          (loginPort e gamePort) no roteador e informe o IP público; CGNAT pode impedir conexões.
+          Não exponha a porta 3306 do MySQL à internet.
+          EOF
+          tar -czf yurots-860-linux.tar.gz -C package .
+
+      - name: Upload server package
+        uses: actions/upload-artifact@v4
+        with:
+          name: yurots-860-linux
+          path: yurots-860-linux.tar.gz
+          if-no-files-found: error
+          retention-days: 14
