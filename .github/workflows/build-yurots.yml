@@ -54,11 +54,11 @@ jobs:
           p = Path("config.lua")
           s = p.read_text()
           def lua_escape(v):
-              return v.replace("\\\\", "\\\\\\\\").replace('"', '\\"').replace("\\n", "\\\\n")
-          s = re.sub(r'(?m)^(\\s*sqlPass\\s*=\\s*")[^"]*(")', lambda m: m.group(1) + lua_escape(os.environ["DBPASS"]) + m.group(2), s, count=1)
+              return v.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n")
+          s = re.sub(r'(?m)^(\s*sqlPass\s*=\s*")[^"]*(")', lambda m: m.group(1) + lua_escape(os.environ["DBPASS"]) + m.group(2), s, count=1)
           ip = os.environ.get("SERVERIP", "").strip()
           if ip:
-              s = re.sub(r'(?m)^(\\s*ip\\s*=\\s*")[^"]*(")', lambda m: m.group(1) + lua_escape(ip) + m.group(2), s, count=1)
+              s = re.sub(r'(?m)^(\s*ip\s*=\s*")[^"]*(")', lambda m: m.group(1) + lua_escape(ip) + m.group(2), s, count=1)
           p.write_text(s)
           PY
           fi
