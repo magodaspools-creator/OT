@@ -11,6 +11,7 @@ on:
       - "config.lua"
       - "data/**"
       - "mods/**"
+      - "tutoriais + db/**"
       - ".github/workflows/build-yurots.yml"
 
 permissions:
