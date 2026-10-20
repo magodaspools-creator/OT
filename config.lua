@@ -38,13 +38,13 @@
 	loginOnlyWithLoginServer = false
 
 	-- Account manager
-	accountManager = false
+	accountManager = true
 	namelockManager = true
-	newPlayerChooseVoc = false
-	newPlayerSpawnPosX = 1
-	newPlayerSpawnPosY = 1
+	newPlayerChooseVoc = true
+	newPlayerSpawnPosX = 2048
+	newPlayerSpawnPosY = 2048
 	newPlayerSpawnPosZ = 7
-	newPlayerTownId = 2
+	newPlayerTownId = 1
 	newPlayerLevel = 8
 	newPlayerMagicLevel = 0
 	generateAccountNumber = false
