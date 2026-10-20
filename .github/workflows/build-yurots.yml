@@ -34,8 +34,10 @@ jobs:
           grep -F 'Temporary validation interfaces must not schedule callbacks.' luascript.cpp
           grep -F 'interface->m_interfaceName == "Test Interface"' luascript.cpp
 
-      - name: Compile existing Yurots source
-        run: make -j2
+      - name: Clean and compile existing Yurots source
+        run: |
+          make clean
+          make -j2
 
       - name: Assemble runtime package
         run: |
