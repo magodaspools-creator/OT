@@ -79,12 +79,11 @@ jobs:
           (loginPort e gamePort) no roteador e informe o IP público; CGNAT pode impedir conexões.
           Não exponha a porta 3306 do MySQL à internet.
           EOF
-          tar -czf yurots-860-linux.tar.gz -C package .
 
       - name: Upload server package
         uses: actions/upload-artifact@v4
         with:
           name: yurots-860-linux
-          path: yurots-860-linux.tar.gz
+          path: package/
           if-no-files-found: error
           retention-days: 14
