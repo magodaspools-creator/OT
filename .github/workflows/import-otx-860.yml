@@ -1,8 +1,6 @@
 name: Import OTX 8.60 source
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
