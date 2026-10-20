@@ -4,7 +4,7 @@ INCLUDEDIRS = -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/inclu
 
 FLAGS = -DBOOST_DISABLE_ASSERTS -DNDEBUG
 
-CXXFLAGS = -march=native -mtune=native $(INCLUDEDIRS) $(FLAGS) -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations
+CXXFLAGS = -march=x86-64 -mtune=generic $(INCLUDEDIRS) $(FLAGS) -Werror -Wall -Ofast -ggdb3 -std=c++11 -pthread -lpthread -fno-strict-aliasing -Wno-error=maybe-uninitialized -Wno-error=deprecated-declarations
 CXX = g++
 
 LIBS = -llua5.1 -lgmp -lboost_thread -lboost_system -lmysqlclient -lxml2 -lboost_regex -lboost_filesystem -lcrypto
