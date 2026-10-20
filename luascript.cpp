@@ -9080,6 +9080,13 @@ int32_t LuaInterface::luaAddEvent(lua_State* L)
 		return 1;
 	}
 
+	// Temporary validation interfaces must not schedule callbacks.
+	if(interface->m_interfaceName == "Test Interface")
+	{
+		lua_pushnumber(L, 0);
+		return 1;
+	}
+
 	int32_t parameters = lua_gettop(L);
 	if(!lua_isfunction(L, -parameters)) //-parameters means the first parameter from left to right
 	{
