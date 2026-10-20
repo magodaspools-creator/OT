@@ -71,6 +71,8 @@ jobs:
 
           Este pacote contém o binário compilado, datapack e mapa Yurots.
           O banco MySQL precisa ser criado/importado separadamente usando database.sql.
+          Para criar contas pelo cliente 8.60, entre no Account Manager com conta 1 e senha 1.
+          Use essa conta apenas para criar contas; não a compartilhe como conta de jogo.
           Antes de iniciar, edite config.lua e preencha sqlHost, sqlUser, sqlPass e sqlDatabase.
           Para jogar na mesma rede, use o IP LAN do computador servidor no cliente.
           Para amigos pela internet, configure encaminhamento TCP das portas configuradas em config.lua
