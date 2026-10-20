@@ -1,0 +1,35 @@
+name: Import OTX 8.60 source
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-otx-860.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+      - name: Fetch OTX 8.60 source
+        run: |
+          git clone --depth 1 --branch otxserv2 https://github.com/mattyx14/otxserver.git /tmp/otx-upstream
+          test -d /tmp/otx-upstream/path_8_6x
+          mkdir -p server
+          cp -a /tmp/otx-upstream/path_8_6x/. server/
+      - name: Commit imported source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add server
+          if git diff --cached --quiet; then
+            echo "No source changes to import."
+          else
+            git commit -m "Import OTX 8.60 source and datapack"
+            git push
+          fi
