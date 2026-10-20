@@ -17,9 +17,8 @@ jobs:
       - name: Fetch OTX 8.60 source
         run: |
           git clone --depth 1 --branch otxserv2 https://github.com/mattyx14/otxserver.git /tmp/otx-upstream
-          test -d /tmp/otx-upstream/path_8_6x
           mkdir -p server
-          cp -a /tmp/otx-upstream/path_8_6x/. server/
+          rsync -a --exclude=.git /tmp/otx-upstream/ server/
       - name: Commit imported source
         run: |
           git config user.name "github-actions[bot]"
