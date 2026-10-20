@@ -1,6 +1,6 @@
 OTX = theotxserver
 
-INCLUDEDIRS = -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/libxml2"
+INCLUDEDIRS = -I"." -I"/usr/include/lua5.1" -I"/usr/include/mysql" -I"/usr/include/mariadb" -I"/usr/include/libxml2"
 
 FLAGS = -DBOOST_DISABLE_ASSERTS -DNDEBUG
 
