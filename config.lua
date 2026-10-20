@@ -18,7 +18,7 @@
 	sqlHost = "localhost"
 	sqlPort = 3306
 	sqlUser = "otx"
-	sqlPass = "TibiaLocal860!"
+	sqlPass = "CHANGE_ME_SET_YOUR_DB_PASSWORD"
 	sqlDatabase = "yurots"
 	sqlFile = "schemas/otxserver.s3db"
 	sqlKeepAlive = 0
