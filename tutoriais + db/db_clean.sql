@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `name`, `password`, `salt`, `premdays`, `lastday`, `email`, `key`, `blocked`, `warnings`, `group_id`, `premium_points`, `backup_points`, `guild_points`, `email_new`, `email_new_time`, `rlname`, `location`, `page_access`, `email_code`, `next_email`, `create_date`, `create_ip`, `last_post`, `flag`, `vip_time`, `vote`, `guild_points_stats`) VALUES
-(1, '1', 'nohavelookmyfoot', '', 65535, 0, '', '0', 0, 0, 1, 0, 0, 0, '', 0, '', '', 0, '', 0, 0, 0, 0, 'unknown', 0, 0, 0),
+(1, '1', '356a192b7913b04c54574d18c28d46e6395428ab', '', 65535, 0, '', '0', 0, 0, 1, 0, 0, 0, '', 0, '', '', 0, '', 0, 0, 0, 0, 'unknown', 0, 0, 0),
 (2, '10', 'nohavelookmyfoot', '', 0, 0, '', '', 0, 0, 1, 0, 0, 0, '', 0, '', '', 0, '', 0, 1480371940, 0, 0, 'unknown', 0, 0, 0),
 (3, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', '', 30, 1554756036, 'admin@admin.com', '', 0, 0, 1, 0, 0, 0, '', 0, '', '', 15, '', 0, 1531414410, 0, 0, 'unknown', 0, 0, 0);
 
