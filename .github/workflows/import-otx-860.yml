@@ -3,8 +3,6 @@ name: Import OTX 8.60 source
 on:
   push:
     branches: [main]
-    paths:
-      - ".github/workflows/import-otx-860.yml"
   workflow_dispatch:
 
 permissions:
