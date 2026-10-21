@@ -1,0 +1,40 @@
+name: Prepare Yurots test server
+
+on:
+  workflow_run:
+    workflows: ["Build Yurots 8.60"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  stage:
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main'
+    runs-on: self-hosted
+    steps:
+      - name: Download compiled server package
+        uses: actions/download-artifact@v4
+        with:
+          name: yurots-860-linux
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+          path: incoming-package
+
+      - name: Stage package without touching an existing server
+        shell: bash
+        run: |
+          set -euo pipefail
+          TARGET="$HOME/ot-server-test"
+          RELEASE="$TARGET/releases/${{ github.event.workflow_run.id }}"
+          mkdir -p "$RELEASE"
+          cp -a incoming-package/. "$RELEASE/"
+          chmod +x "$RELEASE/theotxserver" "$RELEASE/start.sh"
+          if [ ! -e "$TARGET/current" ]; then
+            ln -s "releases/${{ github.event.workflow_run.id }}" "$TARGET/current"
+          fi
+          echo "Package staged at: $RELEASE"
+          echo "Current server link (left unchanged if already present): $TARGET/current"
+          echo "The server was NOT started and no existing config/database was overwritten."
