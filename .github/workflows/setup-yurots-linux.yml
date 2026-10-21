@@ -21,19 +21,31 @@ jobs:
           BASE="$HOME/yurots-860-staging"
           RELEASE="$BASE/current"
           echo "Checking staged server package..."
-          test -x "$RELEASE/theotxserver"
-          test -f "$RELEASE/config.lua"
-          test -f "$RELEASE/database.sql"
+          echo "Staging base: $BASE"
+          echo "Current path: $RELEASE"
+          if [ ! -e "$RELEASE" ]; then
+            echo "ERROR: staging current path is missing or broken."
+            ls -la "$BASE" || true
+            exit 1
+          fi
+          ls -la "$RELEASE" | head -60
+          if [ ! -x "$RELEASE/theotxserver" ]; then
+            echo "ERROR: expected executable missing: $RELEASE/theotxserver"
+            find "$RELEASE" -maxdepth 2 -type f \( -iname '*otx*server*' -o -name 'config.lua' -o -name 'database.sql' \) -printf '%M %p\n' | head -60
+            exit 1
+          fi
+          test -f "$RELEASE/config.lua" || { echo "ERROR: config.lua missing"; exit 1; }
+          test -f "$RELEASE/database.sql" || { echo "ERROR: database.sql missing"; exit 1; }
+
+          if ! sudo -n true 2>/dev/null; then
+            echo "ERROR: Linux runner user needs passwordless sudo to configure MariaDB. No changes made."
+            exit 1
+          fi
 
           if ! command -v mysql >/dev/null 2>&1; then
             echo "MariaDB client/server not found; attempting installation..."
             sudo -n apt-get update
             sudo -n apt-get install -y mariadb-server
-          fi
-
-          if ! sudo -n true 2>/dev/null; then
-            echo "ERROR: Linux runner user needs passwordless sudo to configure MariaDB."
-            exit 1
           fi
 
           sudo systemctl enable --now mariadb
