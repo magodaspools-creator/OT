@@ -1,6 +1,7 @@
 name: Prepare Yurots Linux database
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
