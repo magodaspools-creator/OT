@@ -1,0 +1,73 @@
+name: Prepare Yurots Linux database
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/setup-yurots-linux.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  setup:
+    runs-on: self-hosted
+    steps:
+      - name: Configure a fresh local MariaDB database safely
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="$HOME/yurots-860-staging"
+          RELEASE="$BASE/current"
+          echo "Checking staged server package..."
+          test -x "$RELEASE/theotxserver"
+          test -f "$RELEASE/config.lua"
+          test -f "$RELEASE/database.sql"
+
+          if ! command -v mysql >/dev/null 2>&1; then
+            echo "MariaDB client/server not found; attempting installation..."
+            sudo -n apt-get update
+            sudo -n apt-get install -y mariadb-server
+          fi
+
+          if ! sudo -n true 2>/dev/null; then
+            echo "ERROR: Linux runner user needs passwordless sudo to configure MariaDB."
+            exit 1
+          fi
+
+          sudo systemctl enable --now mariadb
+          if sudo mysql -Nse "SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME='yurots'" | grep -qx yurots; then
+            echo "ERROR: Database 'yurots' already exists. Refusing to overwrite or import into it."
+            exit 1
+          fi
+
+          DBPASS="$(python3 -c 'import secrets; print(secrets.token_urlsafe(36))')"
+          sudo mysql <<SQL
+          CREATE DATABASE yurots CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+          CREATE USER 'otx'@'localhost' IDENTIFIED BY '$DBPASS';
+          GRANT ALL PRIVILEGES ON yurots.* TO 'otx'@'localhost';
+          FLUSH PRIVILEGES;
+          SQL
+
+          sudo mysql yurots < "$RELEASE/database.sql"
+          sudo mysql yurots -e "DELETE FROM accounts WHERE name='admin';"
+
+          python3 - "$RELEASE/config.lua" "$DBPASS" <<'PY'
+          import re, sys
+          from pathlib import Path
+          p = Path(sys.argv[1])
+          password = sys.argv[2]
+          s = p.read_text()
+          s = re.sub(r'(?m)^\s*sqlHost\s*=.*$', '\tsqlHost = "localhost"', s, count=1)
+          s = re.sub(r'(?m)^\s*sqlUser\s*=.*$', '\tsqlUser = "otx"', s, count=1)
+          s = re.sub(r'(?m)^\s*sqlPass\s*=.*$', '\tsqlPass = "' + password + '"', s, count=1)
+          s = re.sub(r'(?m)^\s*sqlDatabase\s*=.*$', '\tsqlDatabase = "yurots"', s, count=1)
+          p.write_text(s)
+          PY
+
+          install -m 600 /dev/null "$BASE/db-password"
+          printf '%s\n' "$DBPASS" > "$BASE/db-password"
+          unset DBPASS
+          mysql -uotx --password="$(cat "$BASE/db-password")" yurots -Nse "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='yurots'" | grep -Eq '^[1-9][0-9]*$'
+          echo "SUCCESS: MariaDB is running, the fresh yurots database was imported, and the staged config now uses its local credentials."
+          echo "The game server has NOT been started."
