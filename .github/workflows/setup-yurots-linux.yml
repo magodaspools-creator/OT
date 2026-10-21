@@ -28,12 +28,14 @@ jobs:
             ls -la "$BASE" || true
             exit 1
           fi
-          ls -la "$RELEASE" | head -60
-          if [ ! -x "$RELEASE/theotxserver" ]; then
-            echo "ERROR: expected executable missing: $RELEASE/theotxserver"
-            find "$RELEASE" -maxdepth 2 -type f \( -iname '*otx*server*' -o -name 'config.lua' -o -name 'database.sql' \) -printf '%M %p\n' | head -60
+          ls -la "$RELEASE/"
+          if [ ! -f "$RELEASE/theotxserver" ]; then
+            echo "ERROR: expected binary file missing: $RELEASE/theotxserver"
+            find -L "$RELEASE" -maxdepth 2 -type f \( -iname '*otx*server*' -o -name 'config.lua' -o -name 'database.sql' \) -printf '%M %p\n' | head -60
             exit 1
           fi
+          chmod +x "$RELEASE/theotxserver"
+          test -x "$RELEASE/theotxserver" || { echo "ERROR: cannot make server binary executable"; exit 1; }
           test -f "$RELEASE/config.lua" || { echo "ERROR: config.lua missing"; exit 1; }
           test -f "$RELEASE/database.sql" || { echo "ERROR: database.sql missing"; exit 1; }
 
