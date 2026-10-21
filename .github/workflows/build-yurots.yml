@@ -94,3 +94,29 @@ jobs:
           path: package/
           if-no-files-found: error
           retention-days: 14
+
+  deploy-staging:
+    name: Deliver package to Linux test machine
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Download package from this build
+        uses: actions/download-artifact@v4
+        with:
+          name: yurots-860-linux
+          path: downloaded-package
+
+      - name: Install a versioned staging copy without overwriting existing files
+        env:
+          RELEASE_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          BASE="$HOME/yurots-860-staging"
+          RELEASE="$BASE/releases/$RELEASE_ID"
+          mkdir -p "$RELEASE"
+          cp -a downloaded-package/. "$RELEASE/"
+          chmod +x "$RELEASE/start.sh"
+          ln -sfn "$RELEASE" "$BASE/current"
+          echo "Package delivered to: $RELEASE"
+          echo "Current staging link: $BASE/current"
+          echo "This step does not start or restart the game server."
